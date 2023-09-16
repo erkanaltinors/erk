@@ -2,16 +2,17 @@ import { ScrollArea } from "./ui/scroll-area";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 export default function InfoTabs() {
   return (
-    <Tabs defaultValue="career" className="w-full">
-      <TabsList className="flex flex-wrap md:flex-nowrap">
+    <Tabs defaultValue="career">
+      <TabsList className="mb-5 flex flex-wrap md:flex-nowrap">
         <TabsTrigger value="career">Career</TabsTrigger>
+        <TabsTrigger value="portfolio">Portfolio</TabsTrigger>
       </TabsList>
       <TabsContent value="career" className="focus:outline-none">
-        <ScrollArea className="h-[calc(100vh-300px)] w-full text-white focus:outline-none">
+        <ScrollArea className="mx-auto h-[calc(100vh-300px)] w-full text-white focus:outline-none md:w-2/3">
           <div className="grid grid-cols-1 gap-2 rounded-md p-4">
             <div className="grid grid-cols-1 gap-2">
               <div className="mb-4 items-center gap-2 md:flex md:justify-between">
-                <p className="text-lg md:text-2xl">Doping Hafıza</p>
+                <p className="text-lg md:text-2xl">Doping Technology</p>
                 <p className="text-sm font-light italic md:text-base">Sep 2022 - Still Working</p>
               </div>
               <div>
@@ -110,6 +111,18 @@ export default function InfoTabs() {
               </div>
               <div>
                 <p className="inline-flex rounded-sm bg-slate-800 p-3 text-sm italic">Used Technologies: Javascript</p>
+              </div>
+            </div>
+          </div>
+        </ScrollArea>
+      </TabsContent>
+      <TabsContent value="portfolio" className="focus:outline-none">
+        <ScrollArea className="mx-auto h-[calc(100vh-300px)] w-full text-white focus:outline-none md:w-2/3">
+          <div className="grid grid-cols-1 gap-2">
+            <div className="col-span-1">
+              <div className="mx-auto block rounded-md bg-slate-700 px-5 py-8 text-white">
+                <p className="font-semibold">Regnum Carya Hotels</p>
+                <p className="italic">Corporate Website</p>
               </div>
             </div>
           </div>
