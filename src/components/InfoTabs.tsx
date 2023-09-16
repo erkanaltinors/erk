@@ -7,7 +7,7 @@ export default function InfoTabs(){
                 <TabsTrigger value="career">Career</TabsTrigger>
             </TabsList>
             <TabsContent value="career" className="focus:outline-none">
-                <ScrollArea className="h-[calc(100vh-250px)] md:h-[calc(100vh-300px)] w-full text-white focus:outline-none">
+                <ScrollArea className="h-[calc(100vh-300px)] w-full text-white focus:outline-none">
                     <div className="grid grid-cols-1 gap-2 p-4 rounded-md">
                         <div className="grid grid-cols-1 gap-2">
                             <div className="md:flex items-center md:justify-between gap-2 mb-4">
