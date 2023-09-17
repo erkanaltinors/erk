@@ -21,7 +21,6 @@ const InfoTabs: React.FC = () => {
   useEffect(()=> {
     fetch('https://www.codewars.com/api/v1/users/erkanaltinors').then((response) => response.json()).then((data) => setCodewars(data));
   },[]);
-  console.log(codewars);
   return (
     <Tabs defaultValue="career">
       <TabsList className="mb-5 flex flex-wrap md:flex-nowrap">
