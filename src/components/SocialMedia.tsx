@@ -23,16 +23,6 @@ export default function SocialMedia() {
           <GithubLogo weight="duotone" className="text-white" size={32} />
         </a>
       </div>
-      <div>
-        <a
-          href="https://twitter.com/ErkanAltinors"
-          rel="noopener noreferrer"
-          target="_blank"
-          aria-label="Twitter Profile"
-        >
-          <TwitterLogo weight="duotone" className="text-white" size={32} />
-        </a>
-      </div>
     </div>
   );
 }
