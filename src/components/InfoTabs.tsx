@@ -91,18 +91,6 @@ const InfoTabs: React.FC = () => {
                 <p className="text-sm font-light italic md:text-base">Jun 2019 - Nov 2019</p>
               </div>
               <div>
-                <p>Implement, style and add interactions to web pages for e-commercial website which designed by creative team.</p>
-              </div>
-              <div>
-                <p className="inline-flex rounded-sm bg-slate-800 p-3 text-sm italic">Used Technologies: Angular8, SASS, Typescript</p>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 gap-2">
-              <div className="mb-4 items-center gap-2 md:flex md:justify-between">
-                <p className="text-lg md:text-2xl">Related Digital</p>
-                <p className="text-sm font-light italic md:text-base">Jun 2019 - Nov 2019</p>
-              </div>
-              <div>
                 <ul>
                   <li>
                     Implementing custom scripts according to customers' request,
