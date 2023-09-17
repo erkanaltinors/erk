@@ -65,7 +65,7 @@ const InfoTabs: React.FC = () => {
                   <li>Building strategies to improve web site speed,</li>
                   <li>Made collaboration with back-end team and management to decrease project publish date.</li>
                   <li>20+ finished projects & 50+ maintained projects.</li>
-                  <li>Won 4 rewards from different committees such as Altin Orumcek and Horizon Interactive Awards.</li>
+                  <li>Won 5 awards from different committees such as Altin Orumcek and Horizon Interactive Awards.</li>
                 </ul>
                 <p className="mt-2">I've taught 4 interns in 2021. 3 of them started as Junior Front-end Developer in this company.</p>
               </div>
