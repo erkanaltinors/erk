@@ -23,7 +23,7 @@ const InfoTabs: React.FC = () => {
   },[]);
   return (
     <Tabs defaultValue="career">
-      <TabsList className="mb-5 flex flex-wrap md:flex-nowrap">
+      <TabsList className="mb-5 flex">
         <TabsTrigger value="career">Career</TabsTrigger>
         <TabsTrigger value="portfolio">Portfolio</TabsTrigger>
         <TabsTrigger value="personal">Personal</TabsTrigger>
@@ -215,7 +215,7 @@ const InfoTabs: React.FC = () => {
       </TabsContent>
       <TabsContent value="personal">
         <ScrollArea className="mx-auto h-[calc(100vh-300px)] w-full text-white focus:outline-none md:w-2/3">
-          <div className="rounded-sm bg-slate-700 px-5 py-8">
+          <div className="rounded-sm px-5 py-8">
             <p className="text-2xl font-bold">Codewars Stats</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
               <div className="col-span-1 rounded-md bg-gray-900 bg-opacity-50 p-3">
