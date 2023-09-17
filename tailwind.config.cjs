@@ -19,6 +19,9 @@ module.exports = {
       colors: {
         white: "#efefef"
       },
+      fontFamily:{
+        sans: ['Jura','ui-sans-serif', 'system-ui']
+      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },

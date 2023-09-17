@@ -26,7 +26,7 @@ const InfoTabs: React.FC = () => {
       <TabsList className="mb-5 flex flex-wrap md:flex-nowrap">
         <TabsTrigger value="career">Career</TabsTrigger>
         <TabsTrigger value="portfolio">Portfolio</TabsTrigger>
-        <TabsTrigger value="stats">Stats</TabsTrigger>
+        <TabsTrigger value="personal">Personal</TabsTrigger>
       </TabsList>
       <TabsContent value="career" className="focus:outline-none">
         <ScrollArea className="mx-auto h-[calc(100vh-300px)] w-full text-white focus:outline-none md:w-2/3">
@@ -120,7 +120,7 @@ const InfoTabs: React.FC = () => {
               </div>
               <div>
                 <p className="inline-flex rounded-sm bg-slate-800 p-3 text-sm italic">
-                  Used Technologies: Javascript
+                  Used Technologies: HTML, CSS, Javascript
                 </p>
               </div>
             </div>
@@ -133,7 +133,7 @@ const InfoTabs: React.FC = () => {
           <div className="grid grid-cols-1 gap-2">
             <div className="col-span-1">
               <div className="rounded-sm bg-slate-700 px-5 py-8 text-white">
-                <p className="font-semibold">Regnum Carya Hotels</p>
+                <p className="font-semibold text-xl">Regnum Carya Hotels</p>
                 <p className="italic">Corporate Website</p>
                 <p>Awards:</p>
                 <ul>
@@ -165,7 +165,7 @@ const InfoTabs: React.FC = () => {
             </div>
             <div className="col-span-1">
               <div className="rounded-sm bg-slate-700 px-5 py-8 text-white">
-                <p className="font-semibold">Calista Luxury Resort</p>
+                <p className="font-semibold text-xl">Calista Luxury Resort</p>
                 <p className="italic">Corporate Website</p>
                 <p>Awards:</p>
                 <ul>
@@ -189,7 +189,7 @@ const InfoTabs: React.FC = () => {
             </div>
             <div className="col-span-1">
               <div className="rounded-sm bg-slate-700 px-5 py-8 text-white">
-                <p className="font-semibold">Sirene Hotels</p>
+                <p className="font-semibold text-xl">Sirene Hotels</p>
                 <p className="italic">Corporate Website</p>
                 <p>Awards:</p>
                 <ul>
@@ -213,25 +213,25 @@ const InfoTabs: React.FC = () => {
           </div>
         </ScrollArea>
       </TabsContent>
-      <TabsContent value="stats">
+      <TabsContent value="personal">
         <ScrollArea className="mx-auto h-[calc(100vh-300px)] w-full text-white focus:outline-none md:w-2/3">
           <div className="rounded-sm bg-slate-700 px-5 py-8">
-            <p className="text-2xl font-bold">Codewars</p>
+            <p className="text-2xl font-bold">Codewars Stats</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
               <div className="col-span-1 rounded-md bg-gray-900 bg-opacity-50 p-3">
-                <p>Completed Challenges</p>
+                <p className="font-semibold text-xl">Completed Challenges</p>
                 <p className="text-lg font-semibold">{codewars?.codeChallenges.totalCompleted}</p>
               </div>
               <div className="col-span-1 rounded-md bg-gray-900 bg-opacity-50 p-3">
-                <p>Honor</p>
+                <p className="text-xl font-semibold">Honor</p>
                 <p className="text-lg font-semibold">{codewars?.honor}</p>
               </div>
               <div className="col-span-1 rounded-md bg-gray-900 bg-opacity-50 p-3">
-                <p>Leaderboard Position</p>
+                <p className="text-xl font-semibold">Leaderboard Position</p>
                 <p className="text-lg font-semibold">{codewars?.leaderboardPosition}</p>
               </div>
               <div className="col-span-1 rounded-md bg-gray-900 bg-opacity-50 p-3">
-                <p>Rank</p>
+                <p className="text-xl font-semibold">Rank</p>
                 <p className="text-lg font-semibold">{codewars?.ranks.overall.name}</p>
               </div>
             </div>
