@@ -9,3 +9,6 @@ p {
 ul {
   @apply list-none [&>li:not(:last-child)]:mb-2 [&>li:before]:content-['‣_'];
 }
+input {
+  @apply bg-white;
+}
