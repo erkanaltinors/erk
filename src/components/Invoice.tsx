@@ -73,6 +73,7 @@ const Invoice : React.FC = () => {
                       name="name"
                       id="name"
                       value={name}
+                      type="text"
                       defaultValue={name}
                       onAccept={(value) => setName(value)}
                       mask={/^[a-zA-ZğüşıöçĞÜŞİÖÇ ]+$/}
@@ -108,6 +109,7 @@ const Invoice : React.FC = () => {
                         name="address"
                         id="address"
                         value={address}
+                        type="text"
                         defaultValue={address}
                         mask={/^[a-zA-ZğüşıöçĞÜŞİÖÇ0-9\-.\/\\: ]+$/}
                         onAccept={(value) => setAddress(value)}
@@ -178,6 +180,7 @@ const Invoice : React.FC = () => {
                     ({ field }) =>
                       <IMaskInput
                         name="companyName"
+                        type="text"
                         mask={/^[a-zA-ZğüşıöçĞÜŞİÖÇ. ]+$/}
                         onChange={field.onChange}
                         inputRef={field.ref}
@@ -234,6 +237,7 @@ const Invoice : React.FC = () => {
                     ({ field }) =>
                       <IMaskInput
                         name="companyZipcode"
+                        type="text"
                         mask={/^[0-9]{0,5}$/}
                         onChange={field.onChange}
                         inputRef={field.ref}
@@ -261,6 +265,7 @@ const Invoice : React.FC = () => {
                       <IMaskInput
                         name="companyState"
                         mask={/^[A-Za-z]{0,2}$/}
+                        type="text"
                         onChange={field.onChange}
                         inputRef={field.ref}
                         className="px-2 py-1 border rounded-sm border-gray-500"
@@ -286,6 +291,7 @@ const Invoice : React.FC = () => {
                     ({ field }) =>
                       <IMaskInput
                         name="consultancyPrice"
+                        type="text"
                         mask={Number}
                         scale={0}
                         min={0}
@@ -314,6 +320,7 @@ const Invoice : React.FC = () => {
                     ({ field }) =>
                       <IMaskInput
                         name="bankCharge"
+                        type="text"
                         mask={Number}
                         min={0}
                         onChange={field.onChange}
@@ -341,6 +348,7 @@ const Invoice : React.FC = () => {
                     ({ field }) =>
                       <IMaskInput
                         name="exchangeRate"
+                        type="text"
                         mask={Number}
                         min={0}
                         onChange={field.onChange}
