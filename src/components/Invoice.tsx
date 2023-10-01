@@ -37,6 +37,12 @@ const Invoice : React.FC = () => {
   const [name, setName] = useState<string>('');
   const [address, setAddress] = useState<string>('');
   const [companyName, setCompanyName] = useState<string>('');
+  const [companyAddress, setCompanyAddress] = useState<string>('');
+  const [companyZipcode, setCompanyZipCode] = useState<string>('');
+  const [companyState, setCompanyState] = useState<string>('');
+  const [consultancyPrice, setConsultancyPrice] = useState<string>('');
+  const [bankCharge, setBankCharge] = useState<string>('');
+  const [exchangeRate, setExchangeRate] = useState<string>('');
 
   Font.register({family: 'Jura', fonts:[
     {src: FontJuraRegular},
@@ -204,6 +210,7 @@ const Invoice : React.FC = () => {
                 <Controller
                   name="companyAddress"
                   control={control}
+                  defaultValue={companyAddress}
                   rules={{
                     required: {
                       value: true,
@@ -218,8 +225,11 @@ const Invoice : React.FC = () => {
                     ({ field }) =>
                       <IMaskInput
                         name="companyAddress"
+                        value={companyAddress}
+                        defaultValue={companyAddress}
                         mask={/^[a-zA-ZğüşıöçĞÜŞİÖÇ0-9\-.\/\\ ]+$/}
                         onChange={field.onChange}
+                        onAccept={(value) => setCompanyAddress(value)}
                         inputRef={field.ref}
                         className="px-2 py-1 border rounded-sm border-gray-500"
                       />
@@ -233,6 +243,7 @@ const Invoice : React.FC = () => {
               <label htmlFor="companyZipcode" className="mb-2 font-bold text-lg">Posta Kodu</label>
                 <Controller
                   name="companyZipcode"
+                  defaultValue={companyZipcode}
                   control={control}
                   rules={{
                     required: {
@@ -245,10 +256,13 @@ const Invoice : React.FC = () => {
                       <IMaskInput
                         name="companyZipcode"
                         type="text"
+                        value={companyZipcode}
+                        defaultValue={companyZipcode}
                         mask={/^[0-9]{0,5}$/}
                         onChange={field.onChange}
                         inputRef={field.ref}
                         className="px-2 py-1 border rounded-sm border-gray-500"
+                        onAccept={(value) => setCompanyZipCode(value)}
                       />
                   }
                 />
@@ -261,6 +275,7 @@ const Invoice : React.FC = () => {
                 <Controller
                   name="companyState"
                   control={control}
+                  defaultValue={companyState}
                   rules={{
                     required: {
                       value: true,
@@ -271,9 +286,12 @@ const Invoice : React.FC = () => {
                     ({ field }) =>
                       <IMaskInput
                         name="companyState"
+                        value={companyState}
+                        defaultValue={companyState}
                         mask={/^[A-Za-z]{0,2}$/}
                         type="text"
                         onChange={field.onChange}
+                        onAccept={(value) => setCompanyState(value)}
                         inputRef={field.ref}
                         className="px-2 py-1 border rounded-sm border-gray-500"
                       />
@@ -282,11 +300,12 @@ const Invoice : React.FC = () => {
                 <small className="block h-5 text-red-500 text-sm">{formError?.companyState?.message}</small>
             </div>
           </div>
-          <div className="col-span-3">
+          <div className="col-span-3 md:col-span-1">
             <div className="flex flex-col">
               <label htmlFor="consultancyPrice" className="mb-2 font-bold text-lg">Danışmanlık Ücreti (TRY)</label>
                 <Controller
                   name="consultancyPrice"
+                  defaultValue={consultancyPrice}
                   control={control}
                   rules={{
                     required: {
@@ -299,10 +318,13 @@ const Invoice : React.FC = () => {
                       <IMaskInput
                         name="consultancyPrice"
                         type="text"
+                        value={consultancyPrice}
+                        defaultValue={consultancyPrice}
                         mask={Number}
                         scale={0}
                         min={0}
                         onChange={field.onChange}
+                        onAccept={(value) => setConsultancyPrice(value)}
                         inputRef={field.ref}
                         className="px-2 py-1 border rounded-sm border-gray-500"
                       />
@@ -311,12 +333,13 @@ const Invoice : React.FC = () => {
                 <small className="block h-5 text-red-500 text-sm">{formError?.consultancyPrice?.message}</small>
             </div>
           </div>
-          <div className="col-span-3">
+          <div className="col-span-3 md:col-span-1">
             <div className="flex flex-col">
               <label htmlFor="bankCharge" className="mb-2 font-bold text-lg">Banka Ücreti</label>
                 <Controller
                   name="bankCharge"
                   control={control}
+                  defaultValue={bankCharge}
                   rules={{
                     required: {
                       value: true,
@@ -330,7 +353,10 @@ const Invoice : React.FC = () => {
                         type="text"
                         mask={Number}
                         min={0}
+                        value={bankCharge}
+                        defaultValue={bankCharge}
                         onChange={field.onChange}
+                        onAccept={(value) => setBankCharge(value)}
                         inputRef={field.ref}
                         className="px-2 py-1 border rounded-sm border-gray-500"
                       />
@@ -339,12 +365,13 @@ const Invoice : React.FC = () => {
                 <small className="block h-5 text-red-500 text-sm">{formError?.bankCharge?.message}</small>
             </div>
           </div>
-          <div className="col-span-3">
+          <div className="col-span-3 md:col-span-1">
             <div className="flex flex-col">
               <label htmlFor="exchangeRate" className="mb-2 font-bold text-lg">Kur</label>
                 <Controller
                   name="exchangeRate"
                   control={control}
+                  defaultValue={exchangeRate}
                   rules={{
                     required: {
                       value: true,
@@ -358,8 +385,11 @@ const Invoice : React.FC = () => {
                         type="text"
                         mask={Number}
                         min={0}
+                        value={exchangeRate}
+                        defaultValue={exchangeRate}
                         onChange={field.onChange}
                         inputRef={field.ref}
+                        onAccept={(value) => setExchangeRate(value)}
                         className="px-2 py-1 border rounded-sm border-gray-500"
                       />
                   }
@@ -383,23 +413,53 @@ const Invoice : React.FC = () => {
             </Page>
           </Document>
         </PDFViewer> */}
-        <div className="w-2/3 aspect-[1/1.41] bg-white mx-auto my-auto shadow-sm px-2 py-3">
+        <div className="w-full md:w-2/3 xl:w-1/2 aspect-[1/1.41] bg-white mx-auto my-auto shadow-sm px-2 py-3">
           <p className="bg-slate-800 text-white p-2 rounded-sm">INVOICE</p>
           <div className="flex justify-between">
             <div className="w-1/2">
-                <p className="text-xl m-0">{name}</p>
+                <p className="m-0">{name}</p>
                 <div>
                   <p className="text-xs m-0">{address}</p>
                 </div>
             </div>
             <div className="w-1/2 flex justify-end">
-              <p>{format(date, "dd LLLL yyyy")}</p>
+              <p className="m-0">{format(date, "dd LLLL yyyy")}</p>
             </div>
             <div>
             </div>
           </div>
-          <p className="bg-sky-700 text-white py-1 px-2 rounded-sm inline-block m-0">BILL TO</p>
-          <p>{companyName}</p>
+          <p className="bg-sky-900 text-white py-1 px-2 rounded-sm inline-block mb-0">BILL TO</p>
+          <p className="mb-0 h-6">{companyName}</p>
+          <p className="text-xs m-0 h-5">{companyAddress}</p>
+          <p className="text-xs m-0 h-5">{companyZipcode} <span>{companyState}</span></p>
+          <div className="grid grid-cols-4 bg-slate-700 text-white">
+            <div className="col-span-3">
+              <div className="px-2 py-1 text-sm">DESCRIPTION</div>
+            </div>
+            <div className="col-span-1">
+              <div className="px-2 py-1 text-sm text-right">
+                AMOUNT
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-4 bg-gray-200">
+              <div className="col-span-3">
+              <div className="px-2 py-1 text-sm">{format(date, 'LLLL')} Consultancy Services</div>
+            </div>
+            <div className="col-span-1">
+                <div className="px-2 py-1 text-sm text-right">{Number(consultancyPrice) / Number(exchangeRate) > 1 ? Math.round(Number(consultancyPrice) / Number(exchangeRate)).toFixed(2) : null}</div>
+            </div>
+          </div>
+          <div className="grid grid-cols-4 bg-gray-100">
+              <div className="col-span-3">
+                <div className="px-2 py-1 text-sm">Bank Charges</div>
+              </div>
+              <div className="col-span-1">
+                <div className="px-2 py-1 text-sm text-right">{Number(bankCharge).toFixed(2)}</div>
+              </div>
+          </div>
+          <p className="text-xs">Exchange Rate: {Number(exchangeRate).toFixed(2)} TRY/USD</p>
+            <p className="text-xs">{Number(consultancyPrice) / Number(exchangeRate) > 1 ? Math.round(Number(consultancyPrice) / Number(exchangeRate)).toFixed(2) : null} USD ({consultancyPrice} / {Number(exchangeRate).toFixed(2)})</p>
         </div>
       </div>
     </div>
