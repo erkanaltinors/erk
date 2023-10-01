@@ -51,7 +51,7 @@ const Invoice : React.FC = () => {
   return (
   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
     <div className="cols-span-1 flex items-center justify-center">
-      <form id="invoiceForm" onSubmit={handleSubmit(onSubmit)} className="flex-1">
+        <form id="invoiceForm" action="javascript:void(0)" onSubmit={handleSubmit(onSubmit)} className="flex-1">
       <div className="grid grid-cols-3 gap-1">
           <div className="col-span-3">
             <div className="flex flex-col">
