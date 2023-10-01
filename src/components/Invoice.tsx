@@ -33,9 +33,10 @@ const Invoice : React.FC = () => {
     setDate(data.date);
   }
 
-  const [date, setDate] = useState<string>();
+  const [date, setDate] = useState<Date>(new Date());
   const [name, setName] = useState<string>('');
   const [address, setAddress] = useState<string>('');
+  const [companyName, setCompanyName] = useState<string>('');
 
   Font.register({family: 'Jura', fonts:[
     {src: FontJuraRegular},
@@ -51,7 +52,7 @@ const Invoice : React.FC = () => {
   return (
   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
     <div className="cols-span-1 flex items-center justify-center">
-        <form id="invoiceForm" action="javascript:void(0)" onSubmit={handleSubmit(onSubmit)} className="flex-1">
+        <form id="invoiceForm" className="flex-1">
       <div className="grid grid-cols-3 gap-1">
           <div className="col-span-3">
             <div className="flex flex-col">
@@ -128,6 +129,7 @@ const Invoice : React.FC = () => {
               <Controller
                 name="date"
                 control={control}
+                defaultValue={date}
                 rules={{
                   required:{
                     value: true,
@@ -145,7 +147,7 @@ const Invoice : React.FC = () => {
                       {field.value ? (
                         format(field.value, "dd LLLL yyyy")
                       ) : (
-                        <span>Tarih Seçin</span>
+                        format(date, "dd LLLL yyyy")
                       )}
                       <CalendarIcon className="ml-auto h-4 w-4" />
                     </Button>
@@ -153,8 +155,9 @@ const Invoice : React.FC = () => {
                 <PopoverContent className="w-auto p-0" align="center">
                   <Calendar
                     mode="single"
-                    selected={field.value}
+                    selected={field.value ? field.value : date}
                     onSelect={field.onChange}
+                    onDayClick={(value) => setDate(value)}
                     initialFocus
                   />
                 </PopoverContent>
@@ -169,6 +172,7 @@ const Invoice : React.FC = () => {
               <label htmlFor="companyName" className="mb-2 font-bold text-lg">Şirket Adı</label>
               <Controller
                 name="companyName"
+                defaultValue={companyName}
                 control={control}
                   rules={{
                     required: {
@@ -181,8 +185,11 @@ const Invoice : React.FC = () => {
                       <IMaskInput
                         name="companyName"
                         type="text"
+                        value={companyName}
+                        defaultValue={companyName}
                         mask={/^[a-zA-ZğüşıöçĞÜŞİÖÇ. ]+$/}
                         onChange={field.onChange}
+                        onAccept={(value) => setCompanyName(value)}
                         inputRef={field.ref}
                         className="px-2 py-1 border rounded-sm border-gray-500"
                       />
@@ -361,7 +368,7 @@ const Invoice : React.FC = () => {
             </div>
           </div>
       </div>
-          <button type="submit" className="bg-slate-900 text-white px-3 py-2 rounded-sm w-full my-2">Generate</button>
+          <button type="button" onClick={handleSubmit(onSubmit)} className="bg-slate-900 text-white px-3 py-2 rounded-sm w-full my-2">Generate</button>
         </form>
     </div>
     <div className="col-span-1">
@@ -385,9 +392,14 @@ const Invoice : React.FC = () => {
                   <p className="text-xs m-0">{address}</p>
                 </div>
             </div>
+            <div className="w-1/2 flex justify-end">
+              <p>{format(date, "dd LLLL yyyy")}</p>
+            </div>
             <div>
             </div>
           </div>
+          <p className="bg-sky-700 text-white py-1 px-2 rounded-sm inline-block m-0">BILL TO</p>
+          <p>{companyName}</p>
         </div>
       </div>
     </div>
