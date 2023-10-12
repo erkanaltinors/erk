@@ -1,0 +1,19 @@
+---
+import { storyblokEditable, renderRichText } from '@storyblok/astro'
+import Layout from '@/layouts/Layout.astro';
+
+const { blok } = Astro.props
+const content = renderRichText(blok.content)
+---
+<Layout title={`${blok.title} | ${blok.description}`}>
+<main {...storyblokEditable(blok)}>
+  <section class="py-20 w-full bg-gray-800 text-white flex items-center justify-center">
+    <div class="container">
+    <h1 class="text-5xl font-bold mb-3">{blok.title}</h1>
+    <p class="text-3xl font-semibold">{blok.description}</p>
+    </div>
+  </section>
+  <Fragment set:html={content} />
+</main>
+<script src="../prism/prism.js"></script>
+</Layout>

@@ -476,7 +476,7 @@ const Invoice : React.FC = () => {
                 </div>
               </div>
             </div>
-            <button type="button" onClick={handleSubmit(onSubmit)} className="bg-slate-900 text-white px-3 py-2 rounded-sm w-full my-2">Generate</button>
+            <button type="button" onClick={handleSubmit(onSubmit)} className="bg-slate-900 text-white px-3 py-2 rounded-sm w-full my-2">Fatura Oluştur</button>
           </form>
           <PDFDownloadLink document={<InvoiceDocument />} fileName={`${name.split(' ').join('-')}-${format(date, 'LLLL-yyyy')}.pdf`}>
             <button type="button" ref={pdfRef} className="invisible">Download Invoice</button>
