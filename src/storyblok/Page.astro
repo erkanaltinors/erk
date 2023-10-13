@@ -5,7 +5,7 @@ import Layout from '@/layouts/Layout.astro';
 const { blok } = Astro.props
 const content = renderRichText(blok.content)
 ---
-<Layout title={`${blok.title}`}>
+<Layout title={`${blok.title}`} lang='en'>
 <main {...storyblokEditable(blok)}>
   <section class="py-20 w-full bg-gray-800 text-white flex items-center justify-center">
     <div class="container">

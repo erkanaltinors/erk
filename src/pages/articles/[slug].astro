@@ -1,17 +1,17 @@
 ---
 import { useStoryblokApi } from '@storyblok/astro'
 import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
+import Layout from '@/layouts/Layout.astro';
 
 export async function getStaticPaths() {
   const sbApi = useStoryblokApi();
 
   const { data } = await sbApi.get("cdn/stories", {
-    content_type: "blogPost",
+    content_type: "BlogPost",
     version: import.meta.env.DEV ? "draft" : "published",
   });
 
   const stories = Object.values(data.stories);
-
   return stories.map((story: any) => {
     return {
       params: { slug: story.slug },
@@ -27,13 +27,6 @@ const { data } = await sbApi.get(`cdn/stories/articles/${slug}`, {
 
 const story = data.story;
 ---
-
-<html lang="en">
-  <head>
-    <title>Storyblok & Astro</title>
-  </head>
-  <body>
-    <p>{slug}</p>
-    <StoryblokComponent blok={story.content} />
-  </body>
-</html>
+<Layout title={story.content.title} lang='en'>
+<StoryblokComponent blok={story.content} />
+</Layout>
