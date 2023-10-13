@@ -1,4 +1,4 @@
-import { GithubLogo, LinkedinLogo, TwitterLogo } from "@phosphor-icons/react";
+import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 
 export default function SocialMedia() {
   return (
