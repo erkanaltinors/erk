@@ -8,7 +8,7 @@ export async function getStaticPaths() {
 
   const { data } = await sbApi.get("cdn/stories", {
     content_type: "blogPost",
-    version: "draft",
+    version: import.meta.env.DEV ? "draft" : "published",
   });
 
   const stories = Object.values(data.stories);
@@ -23,7 +23,7 @@ const sbApi = useStoryblokApi();
 const { slug } = Astro.params;
 const { data } = await sbApi.get(`cdn/stories/articles/${slug}`, {
   content_type: 'blogPost',
-  version: "draft",
+  version: import.meta.env.DEV ? "draft" : "published",
 });
 
 const story = data.story;

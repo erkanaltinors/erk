@@ -1,19 +1,10 @@
 ---
 import { storyblokEditable, renderRichText } from '@storyblok/astro'
-
 const { blok } = Astro.props
 const content = renderRichText(blok.content)
 ---
-  <main {...storyblokEditable(blok)}>
-  <section class="py-10">
-    <div class="container max-w-[700px]">
-      <div class="relative h-[220px] sm:h-[350px] overflow-hidden rounded-md mb-5">
-        <img src={blok.image.filename} class="object-cover absolute w-full h-full border-0 scale-[1.05] filter blur-sm grayscale-0"/>
-        <img src={blok.image.filename} class="object-cover absolute w-full h-full border-0 scale-[1.05] filter blur-sm grayscale-0"/>
-      </div>
-      <h1 class="text-3xl md:text-5xl font-bold mb-3">{blok.title}</h1>
-      <p class="text-xl md:text-3xl font-semibold text-gray-600">{blok.description}</p>
-      <Fragment set:html={content} />
-    </div>
-  </section>
-</main>
+<article {...storyblokEditable(blok)}>
+  <h1>{blok.title}</h1>
+  <p>{blok.description}</p>
+  <Fragment set:html={content} />
+</article>

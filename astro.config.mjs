@@ -20,8 +20,9 @@ export default defineConfig({
     storyblok({
       accessToken: env.STORYBLOK_TOKEN,
       components: {
+        blogPost: 'storyblok/BlogPost',
+        blogPostList: 'storyblok/BlogPostList',
         page: 'storyblok/Page',
-        blogPost: 'storyblok/blogPost',
       },
       apiOptions: {
         region: 'eu',
