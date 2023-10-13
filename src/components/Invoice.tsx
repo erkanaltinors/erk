@@ -6,7 +6,7 @@ import { Calendar } from "./ui/calendar";
 import { Button } from "./ui/button";
 import { format } from "date-fns"
 import { CalendarIcon } from "lucide-react"
-import ReactPDF, { PDFViewer, Text, Document, Page, View, StyleSheet, Font, PDFDownloadLink } from "@react-pdf/renderer";
+import { Text, Document, Page, View, StyleSheet, Font, PDFDownloadLink } from "@react-pdf/renderer";
 import FontJuraRegular from '../fonts/Jura-Regular.ttf';
 import FontJuraSemiBold from '../fonts/Jura-SemiBold.ttf';
 
@@ -536,105 +536,6 @@ const Invoice : React.FC = () => {
         </div>
       </div>
     </div>
-    <div className="col-span-1">
-        <PDFViewer width={600} height={840} showToolbar={false}>
-          <Document>
-            <Page size="A4" style={styles.page}>
-              <View style={styles.section}>
-                <View style={styles.subSection}>
-                  <Text style={styles.invoice}>INVOICE</Text>
-                </View>
-                  <View style={styles.heading}>
-                  <Text style={styles.fullName}>{name}</Text>
-                  <Text style={styles.date}>{format(date, 'dd LLLL yyyy')}</Text>
-                  </View>
-                  <Text style={styles.address}>{address}</Text>
-                  <Text style={styles.bill}>BILL TO</Text>
-                  <Text style={styles.fullName}>{companyName}</Text>
-                  <Text style={styles.address}>{companyAddress}</Text>
-                  <View style={styles.row}>
-                    <Text style={styles.state}>{companyZipcode},</Text>
-                    <Text style={styles.state}> {companyState.toUpperCase()}</Text>
-                  </View>
-                  <View style={styles.subSection}>
-                  <Text style={styles.invoice}>DESCRIPTION</Text>
-                  <View style={styles.tableRowGray}>
-                    <Text>{format(date, 'LLLL')} Consultancy Services</Text>
-                    <Text>{Number(consultancyPrice) / Number(exchangeRate) > 1 ? Math.ceil(Number(consultancyPrice) / Number(exchangeRate)).toFixed(2) : null}</Text>
-                  </View>
-                  <View style={styles.tableRowWhite}>
-                    <Text>Bank Charges</Text>
-                    <Text>{Number(bankCharge).toFixed(2)}</Text>
-                  </View>
-                  </View>
-                  <View style={styles.rowBetween}>
-                  <View style={styles.subSection}>
-                    <Text>Exchange Rate: {Number(exchangeRate).toFixed(2)} TRY/USD</Text>
-                    <Text>{Number(consultancyPrice) / Number(exchangeRate) > 1 ? Math.round(Number(consultancyPrice) / Number(exchangeRate)).toFixed(2) : null} USD ({consultancyPrice} / {Number(exchangeRate).toFixed(2)})</Text>
-                  </View>
-                  <View style={styles.subSection}>
-                    <Text style={styles.subTotal}>Sub-total: {Math.ceil((Number(consultancyPrice) / Number(exchangeRate)) + Number(bankCharge)).toFixed(2)} USD</Text>
-                    <Text style={styles.tax}>Tax Rate: % 0</Text>
-                    <Text style={styles.total}>Total: {Math.ceil((Number(consultancyPrice) / Number(exchangeRate)) + Number(bankCharge)).toFixed(2)} USD</Text>
-                  </View>
-                  </View>
-              </View>
-            </Page>
-          </Document>
-        </PDFViewer>
-    </div>
-      <div className="col-span-1">
-        <div className="h-screen w-full flex items-center">
-          <div className="w-full md:w-2/3 xl:w-1/2 aspect-[1/1.41] bg-white mx-auto my-auto shadow-sm px-2 py-3">
-            <p className="bg-slate-800 text-white p-2 rounded-sm">INVOICE</p>
-            <div className="flex justify-between">
-              <div className="w-1/2">
-                <p className="m-0">{name}</p>
-                <div>
-                  <p className="text-xs m-0">{address}</p>
-                </div>
-              </div>
-              <div className="w-1/2 flex justify-end">
-                <p className="m-0">{format(date, "dd LLLL yyyy")}</p>
-              </div>
-              <div>
-              </div>
-            </div>
-            <p className="bg-sky-900 text-white py-1 px-2 rounded-sm inline-block mb-0">BILL TO</p>
-            <p className="mb-0 h-6">{companyName}</p>
-            <p className="text-xs m-0 h-5">{companyAddress}</p>
-            <p className="text-xs m-0 h-5">{companyZipcode} <span>{companyState.toUpperCase()}</span></p>
-            <div className="grid grid-cols-4 bg-slate-700 text-white">
-              <div className="col-span-3">
-                <div className="px-2 py-1 text-sm">DESCRIPTION</div>
-              </div>
-              <div className="col-span-1">
-                <div className="px-2 py-1 text-sm text-right">
-                  AMOUNT
-                </div>
-              </div>
-            </div>
-            <div className="grid grid-cols-4 bg-gray-200">
-              <div className="col-span-3">
-                <div className="px-2 py-1 text-sm">{format(date, 'LLLL')} Consultancy Services</div>
-              </div>
-              <div className="col-span-1">
-                <div className="px-2 py-1 text-sm text-right">{Number(consultancyPrice) / Number(exchangeRate) > 1 ? Math.round(Number(consultancyPrice) / Number(exchangeRate)).toFixed(2) : null}</div>
-              </div>
-            </div>
-            <div className="grid grid-cols-4 bg-gray-100">
-              <div className="col-span-3">
-                <div className="px-2 py-1 text-sm">Bank Charges</div>
-              </div>
-              <div className="col-span-1">
-                <div className="px-2 py-1 text-sm text-right">{Number(bankCharge).toFixed(2)}</div>
-              </div>
-            </div>
-            <p className="text-xs">Exchange Rate: {Number(exchangeRate).toFixed(2)} TRY/USD</p>
-            <p className="text-xs">{Number(consultancyPrice) / Number(exchangeRate) > 1 ? Math.round(Number(consultancyPrice) / Number(exchangeRate)).toFixed(2) : null} USD ({consultancyPrice} / {Number(exchangeRate).toFixed(2)})</p>
-          </div>
-        </div>
-      </div>
   </div>
   )
 }
