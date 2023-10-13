@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 p {
-  @apply my-3;
+  @apply my-3 text-base md:text-lg;
 }
 
 ul {
