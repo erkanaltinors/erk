@@ -12,21 +12,33 @@ const { data } = await storyblokApi.get('cdn/stories', {
 const posts = data.stories.map((story: any) => {
   return {
     title: story.content.title,
-    date: new Date(story.published_at).toLocaleDateString("en-US", {dateStyle: "full"}),
     description: story.content.description,
     slug: story.full_slug,
+    image: story.content.image.filename,
+    alt: story.content.image.name
   }
 })
 
 const { blok } = Astro.props
 ---
 
-<ul {...storyblokEditable(blok)}>
-  {posts.map((post: any) => (
-    <li>
-      <time>{post.date}</time>
-      <a href={post.slug}>{post.title}</a>
-      <p>{post.description}</p>
-    </li>
-  ))}
-</ul>
+<section class="bg-gray-100 py-10" {...storyblokEditable(blok)}>
+  <div class="container">
+    <h2 class="text-3xl md:text-5xl mb-5">Articles</h2>
+  </div>
+  <div class="container">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {
+      posts.map((post: any) => (
+    <div class="col-span-1">
+      <a href={post.slug} class="block w-full h-full p-2 hover:bg-slate-700 hover:text-white transition rounded-md focus:outline-none">
+      <p class="font-semibold mt-0">{post.title}</p>
+      <p class="m-0  text-base">{post.description}</p>
+      </a>
+    </div>
+  )
+  )
+  }
+    </div>
+  </div>
+</section>

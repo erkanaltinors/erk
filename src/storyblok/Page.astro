@@ -5,6 +5,15 @@ const { blok } = Astro.props
 ---
 
 <main {...storyblokEditable(blok)}>
+  <section class="h-screen bg-blue-900 relative overflow-hidden">
+    <div class="w-full h-full flex items-center">
+      <div class="container">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl text-white">{blok.title}</h1>
+          <p class="md:text-4xl text-white">{blok.subTitle}</p>
+      </div>
+    </div>
+    <span class="w-[75vw] h-[75vw] md:w-[45vw] md:h-[45vw] rounded-full bg-blue-800 bg-opacity-75 absolute right-[-15vw] bottom-[-15vw] "></span>
+  </section>
   {
     blok.body?.map((blok: any) => {
       return <StoryblokComponent blok={blok} />
