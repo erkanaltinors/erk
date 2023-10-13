@@ -8,6 +8,10 @@ import { loadEnv } from 'vite';
 const env = loadEnv("", process.cwd(), 'STORYBLOK');
 // https://astro.build/config
 export default defineConfig({
+  image: {
+    domains: ["api.storyblok.com"],
+    remotePatterns: [{ protocol: "https" }],
+  },
   integrations: [
     tailwind({
       applyBaseStyles: false,
