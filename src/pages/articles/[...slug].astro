@@ -1,7 +1,7 @@
 ---
 import { useStoryblokApi } from '@storyblok/astro'
 import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
-import Layout from '@/layouts/Layout.astro';
+import BlogDetailLayout from '@/layouts/BlogDetailLayout.astro';
 
 export async function getStaticPaths() {
   const sbApi = useStoryblokApi();
@@ -29,6 +29,6 @@ const { data } = await sbApi.get(`cdn/stories/articles/${slug}`, {
 
 const story = data.story;
 ---
-<Layout title={story.content.title} lang='en'>
+<BlogDetailLayout title={story.content.title} lang='en'>
 <StoryblokComponent blok={story.content} />
-</Layout>
+</BlogDetailLayout>
