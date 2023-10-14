@@ -3,7 +3,23 @@ import { storyblokEditable, renderRichText } from '@storyblok/astro'
 import { Picture } from 'astro:assets';
 const { blok } = Astro.props
 const content = renderRichText(blok.content)
+import 'highlight.js/styles/atom-one-dark.css'
 ---
+
+<script>
+  import hljs from 'highlight.js/lib/core'
+  import html from 'highlight.js/lib/languages/xml'
+  import javascript from 'highlight.js/lib/languages/javascript'
+  import css from 'highlight.js/lib/languages/css'
+  hljs.registerLanguage('html', html)
+  hljs.registerLanguage('javascript', javascript)
+  hljs.registerLanguage('css', css)
+
+  document.querySelectorAll('article code').forEach((el: any) => {
+    hljs.highlightElement(el);
+    console.log(el);
+  })
+</script>
 
 <main {...storyblokEditable(blok)}>
 <section class="py-10">
