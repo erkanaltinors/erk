@@ -109,7 +109,7 @@ const Invoice : React.FC = () => {
             <View style={styles.rowBetween}>
               <View style={styles.subSection}>
                 <Text>Exchange Rate: {Number(exchangeRate).toFixed(2)} TRY/USD</Text>
-                <Text>{Number(consultancyPrice) / Number(exchangeRate) > 1 ? Math.round(Number(consultancyPrice) / Number(exchangeRate)).toFixed(2) : null} USD ({consultancyPrice} / {Number(exchangeRate).toFixed(2)})</Text>
+                <Text>{Number(consultancyPrice) / Number(exchangeRate) > 1 ? Math.ceil(Number(consultancyPrice) / Number(exchangeRate)).toFixed(2) : null} USD ({consultancyPrice} / {Number(exchangeRate).toFixed(2)})</Text>
               </View>
               <View style={styles.subSection}>
                 <Text style={styles.subTotal}>Sub-total: {Math.ceil((Number(consultancyPrice) / Number(exchangeRate)) + Number(bankCharge)).toFixed(2)} USD</Text>
@@ -532,7 +532,7 @@ const Invoice : React.FC = () => {
               </div>
           </div>
           <p className="text-xs">Exchange Rate: {Number(exchangeRate).toFixed(2)} TRY/USD</p>
-            <p className="text-xs">{Number(consultancyPrice) / Number(exchangeRate) > 1 ? Math.round(Number(consultancyPrice) / Number(exchangeRate)).toFixed(2) : null} USD ({consultancyPrice} / {Number(exchangeRate).toFixed(2)})</p>
+            <p className="text-xs">{Number(consultancyPrice) / Number(exchangeRate) > 1 ? Math.ceil(Number(consultancyPrice) / Number(exchangeRate)).toFixed(2) : null} USD ({consultancyPrice} / {Number(exchangeRate).toFixed(2)})</p>
         </div>
       </div>
     </div>
