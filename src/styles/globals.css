@@ -20,3 +20,7 @@ input {
 body {
  @apply bg-violet-50;
 }
+
+.blue-pill-border {
+ @apply before:absolute before:-bottom-1 before:block before:h-1 before:w-full before:rounded-full before:bg-blue-400 before:content-[''] after:absolute after:-bottom-1 after:block after:h-1 after:w-1/2 after:rounded-l-full after:bg-blue-700 after:content-[''];
+}

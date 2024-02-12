@@ -1,18 +1,15 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import BlogPostList from "@/storyblok/BlogPostList.astro";
-import { useStoryblokApi } from "@storyblok/astro";
-const storyblokApi = useStoryblokApi();
-const { data } = await storyblokApi.get("cdn/stories/home", {
- version: import.meta.env.DEV ? "draft" : "published",
-});
-const content = data.story.content;
 ---
 
 <Layout lang="en" title="Erkan Altinors">
- <section class="py-2">
+ <section>
   <div class="container max-w-[800px]">
-   <h1>Erkan Altınörs</h1>
+   <div class="rounded-md bg-slate-950 py-10 text-center text-white md:py-20">
+    <h1>Erkan Altinors</h1>
+    <h2>Frontend Developer</h2>
+   </div>
   </div>
  </section>
  <BlogPostList />

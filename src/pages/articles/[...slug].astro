@@ -12,10 +12,9 @@ export async function getStaticPaths() {
  });
 
  const stories = Object.values(data.stories);
-
  return stories.map((story: any) => {
   return {
-   params: { slug: story.slug },
+   params: { slug: story?.slug },
   };
  });
 }

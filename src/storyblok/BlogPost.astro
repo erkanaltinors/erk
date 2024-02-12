@@ -1,37 +1,35 @@
 ---
-import { storyblokEditable, renderRichText } from '@storyblok/astro'
-import { Picture } from 'astro:assets';
-const { blok } = Astro.props
-const content = renderRichText(blok.content)
-import 'highlight.js/styles/atom-one-dark.css'
+import { storyblokEditable, renderRichText } from "@storyblok/astro";
+const { blok } = Astro.props;
+const content = renderRichText(blok.content);
+import "highlight.js/styles/atom-one-dark.css";
 ---
 
 <script>
-  import hljs from 'highlight.js/lib/core'
-  import html from 'highlight.js/lib/languages/xml'
-  import javascript from 'highlight.js/lib/languages/javascript'
-  import css from 'highlight.js/lib/languages/css'
-  hljs.registerLanguage('html', html)
-  hljs.registerLanguage('javascript', javascript)
-  hljs.registerLanguage('css', css)
+ import hljs from "highlight.js/lib/core";
 
-  document.querySelectorAll('article code').forEach((el: any) => {
-    hljs.highlightElement(el);
-  })
+ import css from "highlight.js/lib/languages/css";
+ import javascript from "highlight.js/lib/languages/javascript";
+ import html from "highlight.js/lib/languages/xml";
+
+ hljs.registerLanguage("html", html);
+ hljs.registerLanguage("javascript", javascript);
+ hljs.registerLanguage("css", css);
+
+ const codeSamples: NodeListOf<HTMLElement> = document.querySelectorAll("article code");
+ codeSamples.forEach((el: HTMLElement) => {
+  hljs.highlightElement(el);
+ });
 </script>
 
 <main {...storyblokEditable(blok)}>
-<section class="py-10">
+ <section class="py-10">
   <div class="container max-w-[700px]">
-    <div class="relative w-full h-[300px] md:h-[400px] overflow-hidden rounded-md mb-5">
-      <Picture src={blok.image.filename} alt={blok.image.name} width={600} height={400} class="w-full h-full absolute object-cover scale-105 blur-sm" loading="lazy" />
-      <Picture src={blok.image.filename} alt={blok.image.name} width={600} height={400} class="w-full h-full absolute object-contain" loading="lazy" />
-    </div>
-    <article>
-      <h1 class="text-3xl sm:text-4xl md:text-6xl font-semibold">{blok.title}</h1>
-      <p class="text-2xl sm:text-3xl md:text-4xl text-gray-700">{blok.description}</p>
-        <Fragment set:html={content} />
-    </article>
+   <article>
+    <h1 class="text-3xl font-semibold sm:text-4xl md:text-6xl">{blok.title}</h1>
+    <p class="text-2xl text-gray-700 sm:text-3xl md:text-4xl">{blok.description}</p>
+    <Fragment set:html={content} />
+   </article>
   </div>
-</section>
+ </section>
 </main>
