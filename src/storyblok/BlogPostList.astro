@@ -40,13 +40,13 @@ const { blok } = Astro.props;
        class="group box-border block h-full w-full rounded-sm p-2 transition hover:bg-slate-950 hover:text-white focus:outline-none"
       >
        <div class="flex justify-between">
+        <p class="mt-0 font-semibold">{post.title}</p>
         <div>
-         <p class="mt-0 font-semibold">{post.title}</p>
-         <p class="m-0  text-base">{post.description}</p>
+         <p class="m-0 text-nowrap rounded-sm px-2 text-sm group-hover:bg-gray-100 group-hover:text-black">{post.date}</p>
         </div>
-        <div>
-         <p class="m-0 rounded-sm px-2 text-sm group-hover:bg-gray-100 group-hover:text-black">{post.date}</p>
-        </div>
+       </div>
+       <div>
+        <p class="m-0  text-base">{post.description}</p>
        </div>
       </a>
      </div>
