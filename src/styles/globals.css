@@ -6,7 +6,7 @@ p {
  @apply my-3 text-base md:text-lg;
 }
 
-ul {
+ul:not([class]) {
  @apply list-none [&>li:before]:content-['‣_'] [&>li:not(:last-child)]:mb-2;
 }
 input {

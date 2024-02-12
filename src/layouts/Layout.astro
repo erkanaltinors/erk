@@ -6,8 +6,8 @@ type Props = {
 
 const { title, lang } = Astro.props as Props;
 import "@/styles/globals.css";
-
 import "@fontsource-variable/red-hat-text";
+import Header from "../components/blocks/Header.astro";
 ---
 
 <!doctype html>
@@ -27,6 +27,7 @@ import "@fontsource-variable/red-hat-text";
   <title>{title}</title>
  </head>
  <body>
+  <Header />
   <slot />
  </body>
 </html>
