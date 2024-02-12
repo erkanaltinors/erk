@@ -1,14 +1,19 @@
 ---
-import { useStoryblokApi } from '@storyblok/astro'
-import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
-import Layout from '@/layouts/Layout.astro';
-
+import Layout from "@/layouts/Layout.astro";
+import BlogPostList from "@/storyblok/BlogPostList.astro";
+import { useStoryblokApi } from "@storyblok/astro";
 const storyblokApi = useStoryblokApi();
-const { data } = await storyblokApi.get('cdn/stories/home', {
-  version: import.meta.env.DEV ? "draft" : "published",
+const { data } = await storyblokApi.get("cdn/stories/home", {
+ version: import.meta.env.DEV ? "draft" : "published",
 });
 const content = data.story.content;
 ---
-<Layout lang='en' title='Erkan Altinors'>
-    <StoryblokComponent blok={content} />
+
+<Layout lang="en" title="Erkan Altinors">
+ <section class="py-2">
+  <div class="container max-w-[800px]">
+   <h1>Erkan Altınörs</h1>
+  </div>
+ </section>
+ <BlogPostList />
 </Layout>

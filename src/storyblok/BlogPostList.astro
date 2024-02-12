@@ -1,44 +1,42 @@
 ---
-import { storyblokEditable } from '@storyblok/astro'
-import { useStoryblokApi } from '@storyblok/astro'
+import { storyblokEditable, useStoryblokApi } from "@storyblok/astro";
 
 const storyblokApi = useStoryblokApi();
 
-const { data } = await storyblokApi.get('cdn/stories', {
-  version: import.meta.env.DEV ? "draft" : "published",
-  content_type: 'blogPost',
-})
+const { data } = await storyblokApi.get("cdn/stories", {
+ version: import.meta.env.DEV ? "draft" : "published",
+ content_type: "blogPost",
+});
 
 const posts = data.stories.map((story: any) => {
-  return {
-    title: story.content.title,
-    description: story.content.description,
-    slug: story.full_slug,
-    image: story.content.image.filename,
-    alt: story.content.image.name
-  }
-})
+ return {
+  title: story.content.title,
+  description: story.content.description,
+  slug: story.full_slug,
+  image: story.content.image.filename,
+  alt: story.content.image.name,
+ };
+});
 
-const { blok } = Astro.props
+const { blok } = Astro.props;
 ---
 
-<section class="bg-gray-100 py-10" {...storyblokEditable(blok)}>
-  <div class="container">
-    <h2 class="text-3xl md:text-5xl mb-5">Articles</h2>
-  </div>
-  <div class="container">
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      {
-      posts.map((post: any) => (
-    <div class="col-span-1">
-      <a href={post.slug} class="block w-full h-full p-2 hover:bg-slate-700 hover:text-white transition rounded-md focus:outline-none">
-      <p class="font-semibold mt-0">{post.title}</p>
-      <p class="m-0  text-base">{post.description}</p>
+<section class="py-10" {...storyblokEditable(blok)}>
+ <div class="container max-w-[800px]">
+  <h2 class="mb-5 text-3xl md:text-5xl">Posts</h2>
+ </div>
+ <div class="container max-w-[800px]">
+  <div class="grid grid-cols-1 gap-4">
+   {
+    posts.map((post: any) => (
+     <div class="col-span-1">
+      <a href={post.slug} class="block h-full w-full rounded-md p-2 transition hover:bg-slate-700 hover:text-white focus:outline-none">
+       <p class="mt-0 font-semibold">{post.title}</p>
+       <p class="m-0  text-base">{post.description}</p>
       </a>
-    </div>
-  )
-  )
-  }
-    </div>
+     </div>
+    ))
+   }
   </div>
+ </div>
 </section>

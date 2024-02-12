@@ -3,16 +3,20 @@
 @tailwind utilities;
 
 p {
-  @apply my-3 text-base md:text-lg;
+ @apply my-3 text-base md:text-lg;
 }
 
 ul {
-  @apply list-none [&>li:not(:last-child)]:mb-2 [&>li:before]:content-['‣_'];
+ @apply list-none [&>li:before]:content-['‣_'] [&>li:not(:last-child)]:mb-2;
 }
 input {
-  @apply bg-white;
+ @apply bg-white;
 }
 
-.copy-to-clipboard-button, .copy-to-clipboard-button:hover{
-  @apply !text-white !bg-lime-500 !p-2 !block;
+.copy-to-clipboard-button,
+.copy-to-clipboard-button:hover {
+ @apply !block !bg-lime-500 !p-2 !text-white;
+}
+body {
+ @apply bg-violet-50;
 }
