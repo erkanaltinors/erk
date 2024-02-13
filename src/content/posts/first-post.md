@@ -2,6 +2,4 @@
 title: "First Post"
 ---
 
-Merhaba!
-
-Umarım iyisinizdir!
+Lorem ipsum dolor sit amet.
