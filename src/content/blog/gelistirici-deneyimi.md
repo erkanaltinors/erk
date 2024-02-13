@@ -15,7 +15,7 @@ Projeyi incelerken belli standartların takip edildiğini ancak bazı dosyalarda
 
 Tabi gerçek hayatta her şey "ideal" değil. Standartlara uyulmayan kurguların önüne geçmek için de geliştirme ortamımızda "linter" ve "formatter" olarak ifade edilen araçlardan faydalanıyoruz.
 
-Linter araçları genel olarak, geliştirme yaparken eksik ya da hatalı yazımların önüne geçmeye, yayına alınmaması gereken bazı kod bloklarını kaldırmamız için (örneğin konsola yazdırılan yazılar) uyarı verir. Geliştirme deneyiminde en önemli ayağı oluşturur. Linter'ları "erken uyarı sistemi" olarak görebilirsiniz. İleriye dönük olarak hatayla karşılaşmamak için kurallarınızı iyi kurgulamanız gerekir.
+Linter araçları genel olarak, geliştirme yaparken eksik ya da hatalı yazımların önüne geçmeye, yayına alınmaması gereken bazı kod bloklarını kaldırmamız için (örneğin konsola yazdırılan yazılar) uyarı verir. Geliştirme deneyiminde en önemli ayağı oluşturur. Linter'ları "erken uyarı sistemi" olarak görebilirsiniz. İleriye dönük olarak hatayla karşılaşmamak için kurallarınızı iyi kurgulamanız gerekir. Linter'lar için dikkat edilmesi gereken bir nokta: Kurallar ne kadar katı olursa hatayla karşılaşmanız o kadar az olur ancak fazla kurallar geliştiricinin hızını kesebilir.
 
 Linter olarak frontend tarafında ESLint gerçekten bir nimet. Topluluk tarafından desteklenen, neredeyse her projenin içerisinde kendine yer bulan bir araç. Plugin ile genişletme imkanıyla ihtiyacınıza göre ESLint kurallarınızı tanımlayabilirsiniz.
 
