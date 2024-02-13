@@ -20,7 +20,6 @@ module.exports = {
     "no-unused-vars": "error",
     "no-console": "warn",
     "no-var": "error",
-    "no-duplicate-imports": "error",
    },
   },
   {
