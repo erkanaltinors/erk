@@ -24,3 +24,5 @@ Formatter, kod bloklarınızı belli bir formatta yazmanıza olanak sağlar. For
 Formatter olarak frontend tarafında Prettier en sık kullanılan formatter olarak uzun bir süredir yerini koruyor. ESLint ile uyumlu çalışması formatter olarak Prettier'ı ön plana çıkarıyor. ESLint'te olduğu gibi Prettier'da da pluginler ile genişletme imkanı mümkün.
 
 Buraya kadarki kısımda geliştirici olarak çalışma ortamımızdaki geliştirici deneyiminden bahsettik. Peki sadece çalışma ortamımız yani IDE'mizde kullandığımız bu araçların geliştirici deneyiminin tamamını kapsadığını söyleyebilir miyiz? Kesinlikle hayır.
+
+Geliştirme ortamı sadece geliştiricilerin deneyimini artırır. Diğer takım üyelerinin aktif rol aldığı diğer araçlar da (örneğin görev takip uygulaması) bütün takım üyelerinin iş akışına göre kurgulanması gerekir.
