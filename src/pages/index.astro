@@ -1,11 +1,12 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import BlogPostList from "@/storyblok/BlogPostList.astro";
+import { getCollection } from "astro:content";
+const blogPosts = await getCollection("blog");
 ---
 
 <Layout lang="en" title="Erkan Altinors">
  <section class="pt-2">
-  <div class="container max-w-[800px]">
+  <div class="container max-w-[600px]">
    <div class="flex justify-center">
     <div class="rounded-sm bg-slate-950 px-4 py-4 text-center text-white md:w-full">
      <h1>Erkan Altinors</h1>
@@ -14,5 +15,29 @@ import BlogPostList from "@/storyblok/BlogPostList.astro";
    </div>
   </div>
  </section>
- <BlogPostList />
+ <section class="py-10">
+  <div class="container max-w-[600px]">
+   <h2 class="blue-pill-border relative z-10 mb-5 inline-block text-3xl md:text-4xl">Blog Yazıları</h2>
+   <ul class="grid gap-2" role="list">
+    {
+     blogPosts.map((post) => (
+      <li role="listitem">
+       <a
+        href={`blog/${post.slug}`}
+        class="group box-border block h-full w-full rounded-sm p-2 transition hover:bg-slate-950 hover:text-white focus:outline-none"
+       >
+        <div class="flex justify-between">
+         <p class="mt-0 font-semibold">{post.data.title}</p>
+         <div />
+        </div>
+        <div>
+         <p class="m-0  text-base">{post.data.description}</p>
+        </div>
+       </a>
+      </li>
+     ))
+    }
+   </ul>
+  </div>
+ </section>
 </Layout>
