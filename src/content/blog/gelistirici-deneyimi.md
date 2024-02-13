@@ -25,4 +25,4 @@ Formatter olarak frontend tarafında Prettier en sık kullanılan formatter olar
 
 Buraya kadarki kısımda geliştirici olarak çalışma ortamımızdaki geliştirici deneyiminden bahsettik. Peki sadece çalışma ortamımız yani IDE'mizde kullandığımız bu araçların geliştirici deneyiminin tamamını kapsadığını söyleyebilir miyiz? Kesinlikle hayır.
 
-Geliştirme ortamı sadece geliştiricilerin deneyimini artırır. Diğer takım üyelerinin aktif rol aldığı diğer araçlar da (örneğin görev takip uygulaması) bütün takım üyelerinin iş akışına göre kurgulanması gerekir.
+Kullandığınız bilgisayar, IDE, hatta daha detaylı düşünürsek oturduğunuz sandalye dahi geliştirme deneyiminize katkı sağlar. Geliştirme deneyimine önem verilen her ortam ve projede geliştiricilerin verimli çalışmaması imkansıza yakın. Deneyim yükseldikçe takım içi iletişim ve takım üyelerinin katkı için isteği muhakkak artacaktır.
