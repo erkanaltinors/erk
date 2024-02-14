@@ -30,7 +30,7 @@ pre {
 }
 
 h2{
-    @apply text-2xl font-medium;
+    @apply text-2xl font-medium mb-4 mt-6;
 }
 
 a:not([class]){

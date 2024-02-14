@@ -10,14 +10,14 @@ const blogPosts = await getCollection("blog");
    <div class="flex justify-center">
     <div class="rounded-sm bg-slate-950 px-4 py-4 text-center text-white md:w-full">
      <h1>Erkan Altınörs</h1>
-     <h2>Frontend Developer</h2>
+     <h2 class="m-0 text-lg font-normal">Frontend Developer</h2>
     </div>
    </div>
   </div>
  </section>
  <section class="py-10">
   <div class="container max-w-[600px]">
-   <h2 class="blue-pill-border relative z-10 mb-5 inline-block text-3xl md:text-4xl">Blog Yazıları</h2>
+   <h2 class="blue-pill-border relative z-10 m-0 inline-block text-3xl md:text-4xl">Blog Yazıları</h2>
    <ul class="grid gap-2" role="list">
     {
      blogPosts.map((post) => (
