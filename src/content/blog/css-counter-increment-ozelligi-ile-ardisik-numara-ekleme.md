@@ -1,6 +1,6 @@
 ---
 title: "CSS Counter Increment Özelliği ile Ardışık Numara Ekleme"
-description: "Javascript yazmanıza gerek kalmadan ardışık olarak sayı yazdırma örneği"
+description: "Javascript yazmanıza gerek kalmadan ardışık olarak numara yazdırma örneği"
 ---
 
 Numaraları ardışık olarak yazdırmak için CSS'te var olan counter increment özelliğini kullanabilirsiniz. Bu özellik sayesinde ister Roma rakamları ile, isterseniz alfabe ile (büyük ya da küçük harf) ya da rakamlarla gösterim yapmanız mümkün. Genelde alt başlıkların numaralandırılmasında kullanılan bu özelliği slider navigasyon noktalarına numara eklemek için de kullanabilirsiniz.
