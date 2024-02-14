@@ -14,4 +14,7 @@ export default defineConfig({
   }),
   react(),
  ],
+ build: {
+  format: "file",
+ },
 });
