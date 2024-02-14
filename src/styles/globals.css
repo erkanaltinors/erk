@@ -29,10 +29,6 @@ pre {
  @apply rounded-sm p-2;
 }
 
-code {
-    @apply bg-slate-950 text-white text-sm px-2 font-mono leading-6 inline-block rounded-sm;
-}
-
 h2{
     @apply text-2xl font-medium;
 }

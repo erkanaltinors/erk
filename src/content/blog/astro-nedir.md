@@ -27,7 +27,11 @@ Astro framework'ünde SSR, adaptörler aracılığıyla sağlanıyor. Projeyi ba
 
 ## Markdown desteği
 
-Astro ile pages dizini altında yer alan `.md` ve `.mdx` dosyalarınız varsayılan olarak html sayfalara dönüştürülür. Üstelik bu sayfalarda bulunan kod bloklarınıza herhangi bir ayar yapmanıza gerek kalmadan syntax highlighting'i uygular.
+Astro ile pages dizini altında yer alan `.md` ve `.mdx` dosyalarınız varsayılan olarak html sayfalara dönüştürülür. Üstelik bu sayfalarda bulunan kod bloklarınıza herhangi bir ayar yapmanıza gerek kalmadan syntax highlighting'i uygular. Syntax highlight örneğini aşağıda görebilirsiniz.
+
+```js
+console.log("test");
+```
 
 ## Detaylı Dokümantasyon ve Topluluk Desteği
 
