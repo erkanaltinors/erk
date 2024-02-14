@@ -11,7 +11,7 @@ Astroyu diğer frameworklerden ayıran en önemli özellik olan ada mimarisi, ko
 
 ## MPA (Multi Page Application)
 
-Single Page Application (SPA) framework'lerinin birbiriyle yarıştığı günümüzde, uzun zamandır kenara ayırdığımız Multi Page Application yaklaşımını benimseyen Astro framework'ü; sayfa dahilinde kullanılmadığı takdirde sayfaya 0 (evet sıfır) kb javascript getiriyor. Multi Page Application yaklaşımı sayesinde, sayfada 'sadece ne kullanılırsa onu' getiriyor. Bu da Astro ile yapılan projelerde performans skorunun üzerine çok düşünmeden uygulama çıkartmamızı sağlıyor.
+Single Page Application (SPA) framework'lerinin birbiriyle yarıştığı günümüzde, uzun zamandır kenara ayırdığımız Multi Page Application yaklaşımını benimseyen Astro framework'ü; sayfa dahilinde kullanılmadığı takdirde sayfaya 0 (evet sıfır) kilobayt javascript getiriyor. Multi Page Application yaklaşımı sayesinde, sayfada 'sadece ne kullanılırsa onu' getiriyor. Bu da Astro ile yapılan projelerde performans skorunun üzerine çok düşünmeden uygulama çıkartmamızı sağlıyor.
 
 ## Dosya Bazlı Yönlendirme (File based routing)
 
