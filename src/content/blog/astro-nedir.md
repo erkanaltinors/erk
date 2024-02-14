@@ -21,6 +21,10 @@ Single Page Application (SPA) framework'lerinin birbiriyle yarıştığı günü
 
 Astro framework'ünde SSR, adaptörler aracılığıyla sağlanıyor. Projeyi barındırdığınız bilinen (cloudflare, vercel gibi) hosting ortamlarında ilgili adaptörü eklemeniz yeterli.
 
+## Geniş UI Kütüphane desteği
+
+Astro projenizde react, vue, solidjs, lit gibi birçok ui kütüphanesi desteklenmektedir. Entegrasyon olarak eklediğiniz her kütüphaneyi kullanabilirsiniz. Aynı proje içerisinde hem react, hem vue kullanabilirsiniz. Bu entegrasyonlar sayesinde react projelerinizi rahatlıkla Astro'ya geçirebilirsiniz.
+
 ## JSX benzeri sözdizimi
 
 Özellikle React ile proje geliştiren yazılımcıların severek kullandığı JSX sözdizimini Astro sayfalarınızda da kullanabilir, koşullu render işlemlerinizi ekstra bir sözdizimi öğrenmenize gerek kalmadan gerçekleştirebilirsiniz.
