@@ -32,6 +32,7 @@
     "@types/react-dom": "^18.2.13",
     "@vitejs/plugin-basic-ssl": "^1.0.1",
     "astro": "^4.3.6",
+    "astro-icon": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "cmdk": "^0.2.0",
@@ -50,6 +51,7 @@
     "vite": "^5.1.1"
   },
   "devDependencies": {
+    "@iconify-json/ph": "^1.1.11",
     "@typescript-eslint/eslint-plugin": "^6.7.5",
     "@typescript-eslint/parser": "^6.7.5",
     "astro-eslint-parser": "^0.16.0",
