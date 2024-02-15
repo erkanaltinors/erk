@@ -23,7 +23,7 @@ Astro framework'ünde SSR, adaptörler aracılığıyla sağlanıyor. Projeyi ba
 
 ## Geniş UI Kütüphane desteği
 
-Astro projenizde react, vue, solidjs, lit gibi birçok ui kütüphanesi desteklenmektedir. Entegrasyon olarak eklediğiniz her kütüphaneyi kullanabilirsiniz. Aynı proje içerisinde hem react, hem vue kullanabilirsiniz. Bu entegrasyonlar sayesinde react projelerinizi rahatlıkla Astro'ya geçirebilirsiniz.
+Astro projenizde react, vue, svelte, solidjs, lit gibi birçok ui kütüphanesi desteklenmektedir. Entegrasyon olarak eklediğiniz her kütüphaneyi kullanabilirsiniz. Aynı proje içerisinde hem react, hem vue kullanabilirsiniz. Bu entegrasyonlar sayesinde react projelerinizi rahatlıkla Astro'ya geçirebilirsiniz.
 
 ## JSX benzeri sözdizimi
 
