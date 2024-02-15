@@ -37,6 +37,10 @@ h2{
     @apply text-2xl font-medium mb-4 mt-6;
 }
 
+blockquote{
+ @apply bg-blue-500 ring-1 ring-blue-600 pl-2 text-white;
+}
+
 a:not([class]){
     @apply text-blue-700
 }
