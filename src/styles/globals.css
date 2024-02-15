@@ -29,6 +29,10 @@ pre {
  @apply rounded-sm p-2;
 }
 
+pre code {
+ @apply text-sm;
+}
+
 h2{
     @apply text-2xl font-medium mb-4 mt-6;
 }
