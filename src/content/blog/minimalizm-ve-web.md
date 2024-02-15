@@ -38,6 +38,9 @@ Kullandığınız teknoloji tercihlerinin de bağımlığının az olması, mini
 ## Sadece minimalist yaklaşım, iyi bir kullanıcı deneyimi sunmak için yeterli midir?
 
 Bu soruya cevabım kesinlikle hayır. Neyi neden yaptığınızı bilip uyguladığınız sürece kullanıcı deneyimini olumsuz etkilemeniz çok düşük bir olasılık.
-Projeniz yolun çok başındaysa, minimalist yaklaşım projenizin başlama tarihi ile yayınlanma tarihi arasındaki süreyi kısaltmanıza yardımcı olacaktır.
+
+## Minimalist yaklaşım ile proje hazırlamanın faydası nedir?
+
+Projeniz yolun çok başındaysa ve yol haritanız da çok detaylı değilse, minimalist yaklaşım projenizin başlama tarihi ile yayınlanma tarihi arasındaki süreyi kısaltmanıza yardımcı olacaktır.
 
 
