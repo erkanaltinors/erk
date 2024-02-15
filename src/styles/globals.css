@@ -38,7 +38,11 @@ h2{
 }
 
 blockquote{
- @apply px-2 text-slate-800 border-l-2 border-slate-800 p-2 rounded-sm;
+ @apply px-2 text-slate-800 border-l-2 border-slate-800 rounded-sm;
+}
+
+blockquote > *:last-child {
+@apply m-0;
 }
 
 a:not([class]){
