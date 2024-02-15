@@ -38,7 +38,7 @@ h2{
 }
 
 blockquote{
- @apply bg-slate-950 ring-1 ring-blue-600 p-2 text-white rounded sm;
+ @apply p-2 text-slate-800 border-l-2 border-slate-800 p-2 rounded sm;
 }
 
 a:not([class]){
