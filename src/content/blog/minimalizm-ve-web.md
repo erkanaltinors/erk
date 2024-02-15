@@ -30,7 +30,7 @@ Gerçekten neyi ön plana çıkarmak istiyorsanız onu ön plana çıkaran tasar
 
 ## Teknolojiler ve Minimalizm
 
-Sadece sunduğunuz kısmını düşünüp projeyi düşünmemek, minimalizme aykırı düşebilecek bir yaklaşım olur.
+Sadece tasarımı düşünüp projeyi düşünmemek, minimalizme aykırı düşebilecek bir yaklaşım olur.
 Projenizin dokümantasyonunu yazdığınızda az yazı ile projenin tüm detaylarını aktarabiliyorsanız projenizin minimalist bir yaklaşım ile hazırlandığını düşünebilirsiniz.
 Daha az şeye ihtiyaç duyarak hazırladığınız projelerin bakımı ise, paket bağımlılığı çok olan projelere nazaran daha kolay olacaktır ve projede çalışma şevkinizi diri tutacaktır.
 Kullandığınız teknoloji tercihlerinin de bağımlığının az olması, minimalist yaklaşımla örtüşecektir.
