@@ -1,2 +1,2 @@
-- Framwork: Astro
+- Framework: Astro
 - Styling: Tailwind
