@@ -4,7 +4,7 @@ description: "Tailwind classlarını kullanarak header'ınızı camsı bir gör�
 ---
 
 Glassmorphic background olarak da geçen, camsı bir görünüm yaratmak için CSS'te background filter kullanılıyor.
-Bu görünümü elde etmek için tailwind class'larını aşağıdaki örnekteki gibi kullanabilirsiniz.
+Bu görünümü elde etmek için tailwind class'larını kullanabilirsiniz.
 
 ```html
 <header class="bg-opacity-50 backdrop-blur-sm backdrop-filter">
