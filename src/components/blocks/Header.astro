@@ -4,11 +4,11 @@ import { Picture } from "astro:assets";
 
 <header class="sticky top-1 z-50 mt-1">
  <div class="container max-w-[600px]">
-  <nav class="rounded-md bg-blue-400 bg-opacity-85 p-1 text-white ring-1 ring-blue-700 backdrop-blur-sm backdrop-filter" role="navigation">
-   <div class="flex gap-2">
-    <div class="justfiy-center flex items-center rounded-sm bg-white p-1">
-     <a href="/">
-      <div class="flex gap-2 text-black hover:text-blue-700">
+  <nav class="group rounded-md bg-opacity-50 p-1 text-white backdrop-blur-sm backdrop-filter transition hover:bg-blue-700" role="navigation">
+   <div class="flex gap-2 text-black group-hover:text-white">
+    <div class="justfiy-center flex items-center rounded-sm p-1">
+     <a href="/" class="text-inherit">
+      <div class="flex gap-2">
        <div>
         <Picture src={"/android-chrome-512x512.png"} alt={"Erkan Altınörs"} width={24} height={24} />
        </div>
