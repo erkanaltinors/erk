@@ -2,16 +2,21 @@
 import { Picture } from "astro:assets";
 ---
 
-<header class="fixed m-2">
- <div>
-  <nav class="rounded-full border border-slate-950 bg-orange-500" role="navigation">
-   <ul class="flex list-none flex-col">
-    <li>
-     <a href="/" class="block p-2">
-      <Picture src={"/android-chrome-512x512.png"} alt={"Erkan Altinors"} width={20} height={20} />
+<header class="sticky top-1 z-50 mt-1">
+ <div class="container max-w-[600px]">
+  <nav class="rounded-md bg-blue-400 bg-opacity-85 p-1 text-white ring-1 ring-blue-700 backdrop-blur-sm backdrop-filter" role="navigation">
+   <div class="flex gap-2">
+    <div class="justfiy-center flex items-center rounded-sm bg-white p-1">
+     <a href="/">
+      <div class="flex gap-2 text-black hover:text-blue-700">
+       <div>
+        <Picture src={"/android-chrome-512x512.png"} alt={"Erkan Altınörs"} width={24} height={24} />
+       </div>
+       <div>Erkan Altınörs</div>
+      </div>
      </a>
-    </li>
-   </ul>
+    </div>
+   </div>
   </nav>
  </div>
 </header>
