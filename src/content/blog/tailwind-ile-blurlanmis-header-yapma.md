@@ -3,7 +3,7 @@ title: "Tailwind ile Blurlanmış Header Yapma"
 description: "Tailwind classlarını kullanarak header'ınızı camsı bir görünüme kavuşturun."
 ---
 
-Glassmorphic background olarak da geçen, camsu bir görünüm yaratmak için CSS'te background filter kullanılıyor.
+Glassmorphic background olarak da geçen, camsı bir görünüm yaratmak için CSS'te background filter kullanılıyor.
 Bu görünümü elde etmek için tailwind class'larını aşağıdaki örnekteki gibi kullanabilirsiniz.
 
 ```html
