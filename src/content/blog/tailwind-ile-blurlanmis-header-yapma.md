@@ -7,7 +7,7 @@ Glassmorphic background olarak da geçen, camsu bir görünüm yaratmak için CS
 Bu görünümü elde etmek için tailwind class'larını aşağıdaki örnekteki gibi kullanabilirsiniz.
 
 ```html
-<header class="bg-opacity-50 text-black backdrop-blur-sm backdrop-filter">
+<header class="bg-opacity-50 backdrop-blur-sm backdrop-filter">
  <nav class="flex">
   <a href="#">Home</a>
  </nav>
