@@ -5,12 +5,6 @@ import { getCollection } from "astro:content";
 const blogPosts = await getCollection("blog");
 ---
 
-<script
- src="https://unpkg.com/htmx.org@1.9.10"
- integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
- crossorigin="anonymous"
->
-</script>
 <Layout lang="tr" title="Erkan Altınörs">
  <section class="pt-2">
   <div class="container max-w-[600px]">
@@ -45,8 +39,4 @@ const blogPosts = await getCollection("blog");
    </ul>
   </div>
  </section>
- <div class="container">
-  <button class="h-10 bg-blue-500 px-3 text-white" hx-get="/partials/test" hx-target="#test" hx-swap="innerHTML">GET HTML BLOCK</button>
-  <div id="test"></div>
- </div>
 </Layout>
