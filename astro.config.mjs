@@ -1,4 +1,3 @@
-import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
 
@@ -18,7 +17,6 @@ export default defineConfig({
   tailwind({
    applyBaseStyles: false,
   }),
-  react(),
   icon({
    include: {
     ph: ["arrow-up-right"],
