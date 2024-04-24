@@ -1,49 +1,27 @@
 {
- "name": "erk",
- "type": "module",
- "version": "0.0.1",
- "scripts": {
-  "dev": "astro dev",
-  "start": "astro dev",
-  "build": "astro build",
-  "preview": "astro preview",
-  "astro": "astro",
-  "build:only-home": "astro build --only=/",
-  "astro:help": "astro --help",
-  "lint": "eslint --ext .js,.jsx,.ts,.tsx,.astro,.mjs,.cjs  .",
-  "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx,.astro,.mjs,.cjs . --fix"
- },
- "dependencies": {
-  "@astrojs/tailwind": "^5.0.2",
-  "@fontsource-variable/red-hat-text": "^5.0.17",
-  "@vitejs/plugin-basic-ssl": "^1.0.1",
-  "astro": "^4.4.4",
-  "astro-icon": "^1.1.0",
-  "prettier-plugin-tailwindcss": "^0.5.11",
-  "tailwind-merge": "^1.14.0",
-  "tailwindcss": "^3.4.3",
-  "tailwindcss-animate": "^1.0.7",
-  "vite": "^5.1.1"
- },
- "devDependencies": {
-  "@iconify-json/ph": "^1.1.11",
-  "@typescript-eslint/eslint-plugin": "^6.7.5",
-  "@typescript-eslint/parser": "^6.7.5",
-  "astro-eslint-parser": "^0.16.0",
-  "eslint": "^8.51.0",
-  "eslint-config-airbnb-base": "^15.0.0",
-  "eslint-config-airbnb-typescript": "^17.0.0",
-  "eslint-config-prettier": "^9.0.0",
-  "eslint-plugin-astro": "^0.31.4",
-  "eslint-plugin-import": "^2.27.5",
-  "eslint-plugin-jsx-a11y": "^6.7.1",
-  "eslint-plugin-prettier": "^5.0.1",
-  "eslint-plugin-react": "^7.32.2",
-  "eslint-plugin-react-hooks": "^4.6.0",
-  "eslint-plugin-simple-import-sort": "^12.0.0",
-  "eslint-plugin-tailwindcss": "^3.10.1",
-  "eslint-plugin-unused-imports": "^3.0.0",
-  "prettier": "^3.0.3",
-  "prettier-plugin-astro": "^0.13.0"
- }
+	"name": "erk",
+	"type": "module",
+	"version": "0.1.0",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"build:only-home": "astro build --only=/",
+		"astro:help": "astro --help"
+	},
+	"dependencies": {
+		"@astrojs/tailwind": "^5.0.2",
+		"@fontsource-variable/red-hat-text": "^5.0.17",
+		"@vitejs/plugin-basic-ssl": "^1.0.1",
+		"astro": "^4.4.4",
+		"astro-icon": "^1.1.0",
+		"tailwindcss": "^3.4.3",
+		"vite": "^5.1.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.7.1",
+		"@iconify-json/ph": "^1.1.11"
+	}
 }
