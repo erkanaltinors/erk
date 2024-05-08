@@ -9,7 +9,7 @@ Frontend Developer ya da güzel Türkçemiz ile "Ön Uç Geliştirici" olmak, ge
 
 Frontend Developer olmayı istemeniz, aynı zamanda genel kapsamlı olarak bir yazılım geliştiricisi, hatta sadece geliştirici olacağınızın ilk adımıdır. Dolayısıyla, sorunların çözümüne bir geliştirici gibi yaklaşabilmeniz gerekiyor. 
 
-Başta bilginiz az olacağı için çok fazla bilgi bombardımanına maruz kalacaksınız. Hatta bilginizin az olduğu bu dönemlerde her gün başınız ağrıyacak, ki bu çok da kötü bir şey değil. Vücute geliştirmeye başladığınızda da kas yorgunluklarınız ilk zamanlarda yoğun olurken zamanla azalır. Burada da, bilginiz arttıkça, çok fazla projede yer aldıkça ve geliştirme yaptıkça bilgi bombardımanından gelen baş ağrınız azalacak.
+Başta bilginiz az olacağı için çok fazla bilgi bombardımanına maruz kalacaksınız. Hatta bilginizin az olduğu bu dönemlerde her gün başınız ağrıyacak, ki bu çok da kötü bir şey değil. Vücut geliştirmeye başladığınızda da kas yorgunluklarınız ilk zamanlarda yoğun olurken zamanla azalır. Burada da, bilginiz arttıkça, çok fazla projede yer aldıkça ve geliştirme yaptıkça bilgi bombardımanından gelen baş ağrınız azalacak.
 
 Sağlık olmazsa olmazınız. Gece çalışmayı daha verimli bulsanız da özellikle uykunuzun kaliteli geçmesi için gereken ne varsa yapın. Uykusuz olarak yeni bir bilgiyi öğrenmek, uykunuzu aldığınız zamanlara göre daha zor olacaktır.
 
