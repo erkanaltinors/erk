@@ -5,25 +5,30 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
- trailingSlash: "never",
- image: {
-  remotePatterns: [
-   {
-    protocol: "https",
-   },
-  ],
- },
- integrations: [
-  tailwind({
-   applyBaseStyles: false,
-  }),
-  icon({
-   include: {
-    ph: ["arrow-up-right"],
-   },
-  }),
- ],
- build: {
-  format: "file",
- },
+	trailingSlash: "never",
+	markdown: {
+		shikiConfig: {
+			wrap: true,
+		},
+	},
+	image: {
+		remotePatterns: [
+			{
+				protocol: "https",
+			},
+		],
+	},
+	integrations: [
+		tailwind({
+			applyBaseStyles: false,
+		}),
+		icon({
+			include: {
+				ph: ["arrow-up-right"],
+			},
+		}),
+	],
+	build: {
+		format: "file",
+	},
 });

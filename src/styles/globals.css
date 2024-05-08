@@ -6,9 +6,6 @@ p {
  @apply my-3 text-base md:text-lg;
 }
 
-ul:not([class]) {
- @apply list-none [&>li:before]:content-['‣_'] [&>li:not(:last-child)]:mb-2;
-}
 input {
  @apply bg-white;
 }
@@ -34,7 +31,15 @@ pre code {
 }
 
 h2{
-    @apply text-2xl font-medium mb-4 mt-6;
+    @apply text-3xl font-medium mb-4 mt-6;
+}
+
+h3 {
+    @apply text-2xl font-medium mb-6 mt-8;
+}
+
+h4 {
+    @apply text-xl font-medium mb-4 mt-6;
 }
 
 blockquote{
