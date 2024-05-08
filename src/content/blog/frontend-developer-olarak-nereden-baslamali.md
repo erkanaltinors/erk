@@ -5,6 +5,26 @@ description: "Yazılım dünyasında Frontend Developer olmak isteyenler için k
 
 Frontend Developer ya da güzel Türkçemiz ile "Ön Uç Geliştirici" olmak, gerçekten severseniz zengin bir iş aşkını beraberinde getiriyor. İnternette arattığınızda da karşılaşacağınız Frontend Developer yol haritasına ya da haritalarına paralel olarak  önemli notları aşağıda sizin için sıraladım.
 
+## Her Şeyden Önce
+
+Frontend Developer olmayı istemeniz, aynı zamanda genel kapsamlı olarak bir yazılım geliştiricisi, hatta sadece geliştirici olacağınızın ilk adımıdır. Dolayısıyla, sorunların çözümüne bir geliştirici gibi yaklaşabilmeniz gerekiyor. 
+
+Başta bilginiz az olacağı için çok fazla bilgi bombardımanına maruz kalacaksınız. Hatta bilginizin az olduğu bu dönemlerde her gün başınız ağrıyacak, ki bu çok da kötü bir şey değil. Vücute geliştirmeye başladığınızda da kas yorgunluklarınız ilk zamanlarda yoğun olurken zamanla azalır. Burada da, bilginiz arttıkça, çok fazla projede yer aldıkça ve geliştirme yaptıkça bilgi bombardımanından gelen baş ağrınız azalacak.
+
+Sağlık olmazsa olmazınız. Gece çalışmayı daha verimli bulsanız da özellikle uykunuzun kaliteli geçmesi için gereken ne varsa yapın. Uykusuz olarak yeni bir bilgiyi öğrenmek, uykunuzu aldığınız zamanlara göre daha zor olacaktır.
+
+Beslenmenize dikkat edin. Odaklanmak için çok fazla kafein içeren ürünler tüketmemeye çalışın.
+
+Stres yönetiminiz kariyer yönetiminizdir. Başlangıçta sizden istenen işlerde teslim tarihi istenecektir. Bunu ne zaman bitirebileceğinizi bilmemek çok doğal, endişelenmeyin. Takımda kıdemli meslektaşlarınıza bu konuda danışabilirsiniz. Bazen imposter sendromuna girip hiç bir şeye yetişemeyecek gibi hissedebilirsiniz. Endişelenmeyin. Neredeyse her yazılım geliştirici bu sendroma kapıldı ve atlattı. Kapıldıysanız da önünde sonunda atlatacaksınız.
+
+Mentor bulun. Mentorunuzun Frontend Developer olmasına gerek yok ancak Frontend Developer olursa ve iyi bir mentor ise yarışa 2-0 önde başlayacağınızı rahatlıkla söyleyebilirim. Mentor olan tanıdığınız ya da iş arkadaşınızın genel kapsamlı paylaşımlarını dikkate alın. Unutmayın, sektörde sizin geçeceğiniz yollardan çok önce geçmiş kişiler var. Onların deneyimlerinden faydalanın.
+
+Kendi projenizi yazın. Başta "Pek bir şey bilmiyorum. Ne projesi de yapacağımı bilmiyorum. Biraz daha öğreneyim sonra proje yapmaya başlarım." diye düşünebilirsiniz ama yine de aklınızda bir proje varsa, basit bir proje bile olsa başlayın ve muhakkak bitirin. Eksikleri elbet olacaktır, mühim değil. Bir projeye başlamanın hazzını yaşadığınız gibi, bitirmenin de hazzını yaşayın.
+
+Git kullanmayı öğrenin. Geliştiriciliğin neresinde olursanız olun Git kullanacaksınız. Çalışma mantığını anlamak için CLI komutları ile değişikliklerinizi gönderin, alın yeni branch açın. Adım adım komutları yazdığınız için çalışma mantığını kavrayacaksınız. Kavradıktan sonra kullandığınız IDE (Örneğin Visual Studio Code) arayüzü üzerinden de git kullanabilirsiniz.
+
+Genel konulardan sıyrılıp Frontend Developer için önemli konulara değinmeye başlayabilirim.
+
 ## HTML: İşin Başı
 
 Web geliştirici olduğunuz zaman (ister Backend geliştirici olun ister Frontend) HTML olmazsa olmazınız. HTML olmadan yaptığınız hiç bir şeyi sunamazsınız. Bomboş bile olsa en az bir tane HTML sayfa (meşhur index.html) projenizi yaşatmak için var olacak. Frontend developer olarak HTML de sizin başlangıç noktanız. Doğru kurgulanmış bir HTML sayfa ile tertemiz, anlaşılır, erişilebilir web sitesi oluşturmanız mümkün. Üstelik HTML ne kadar "işaretleme dili" olsa da doğru yazım ile gereksiz Javascript yükünüzü azaltır.
@@ -72,9 +92,9 @@ HTML kurgusunun en önemli ayağını oluşturan block level/inline level etiket
 
 Projede CSS yazarken muhakkak !important gerekecektir. Ancak çok fazla !important yazarsanız HTML ve CSS kurgunuzu  gözden geçirmenizde fayda var. Özellikle desktop-first, yani masaüstü öncelikli CSS yazmanız; çok fazla !important kullanma ihtiyacını ortaya çıkaran bir unsur.
 
-### Önce küçükler: Mobile-first CSS yazımı
+### Önce küçükler: Mobile-first CSS yazmak
 
-Mobile first yazımın en büyük avantajını performansta göreceksiniz. Tarayıcı, sayfaya çağırılan CSS'i çizerken önce selector'leri, ardından query'leri okur ve uygular. Desktop-first yazdığımızda mobil için yazacağımız CSS kodları media query içinde kalacağından, bu kodlar sonlarda okunacaktır ve haliyle sayfanın çizilmesini az da olsa geciktirecektir. Mecbur kalmadıkça CSS kurgunuzu desktop-first olacak şekilde kurgulamayın. Desktop-first ve mobile-first yazım farklarını aşağıda paylaşıyorum.
+Mobile first CSS yazmanın en büyük avantajını performansta göreceksiniz. Tarayıcı, sayfaya çağırılan CSS'i çizerken önce selector'leri, ardından query'leri okur ve uygular. Desktop-first yazdığımızda mobil için yazacağımız CSS kodları media query içinde kalacağından, bu kodlar sonlarda okunacaktır ve haliyle sayfanın çizilmesini az da olsa geciktirecektir. Mecbur kalmadıkça CSS kurgunuzu desktop-first olacak şekilde kurgulamayın. Desktop-first ve mobile-first yazım farklarını aşağıda paylaşıyorum.
 
 ```css
 Desktop first
