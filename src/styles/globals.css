@@ -53,3 +53,10 @@ blockquote > *:last-child {
 a:not([class]){
     @apply text-blue-700
 }
+
+ul:not([class]){
+    @apply list-disc list-inside;
+}
+ul>li:not(:last-child){
+    @apply mb-2;
+}
