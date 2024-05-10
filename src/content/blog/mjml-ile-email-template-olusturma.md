@@ -1,5 +1,5 @@
 ---
-title: "MJML ile E-mail Template Oluşturma
+title: "MJML ile E-mail Template Oluşturma"
 description: "Sıfırdan E-mail Template oluşturmanın kolay yolunu öğrenin"
 ---
 
