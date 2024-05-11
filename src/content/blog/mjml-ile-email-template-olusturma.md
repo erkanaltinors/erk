@@ -46,6 +46,8 @@ Bu etiket ile kullanacağınız yazı tipini yükleyebilirsiniz.
 
 ### mj-title
 
+Sayfanın başlığını içeren etikettir.
+
 Çok kullanılmasa da var olan diğer head bileşenleri;
 
 - mj-html-attributes
