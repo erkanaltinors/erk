@@ -12,11 +12,11 @@
 		"astro:help": "astro --help"
 	},
 	"dependencies": {
-		"@astrojs/sitemap": "^3.1.4",
+		"@astrojs/sitemap": "^3.1.5",
 		"@astrojs/tailwind": "^5.0.2",
 		"@fontsource-variable/red-hat-text": "^5.0.17",
 		"@vitejs/plugin-basic-ssl": "^1.0.1",
-		"astro": "^4.8.6",
+		"astro": "^4.9.1",
 		"astro-icon": "^1.1.0",
 		"tailwindcss": "^3.4.3",
 		"vite": "^5.2.11"
