@@ -88,6 +88,8 @@ HTML kurgusunun en önemli ayağını oluşturan block level/inline level etiket
 
 ## CSS: Projenin makyajı
 
+CSS yazarken aklınızın bir ucunda sürekli olarak tutmanız gereken şey, yazdığınız kuralların başka kural ya da kurallarla geçersiz kılınabileceği. Yazdığınız kurallar çok fazla eziliyorsa kurgunuzu doğru ayarlamanız gerekir. Her ne kadar pure/vanilla CSS yazılmış proje sayısı az olsa da (günümüzde Tailwind CSS'in pure CSS yazmanın yerini aldığını rahatlıkla söyleyebilirim) pure CSS yazmanız gerekecek yerler olacaktır. Bu zorunluluğun olduğu durumda, özellikle sonradan dahil olduğunuz projelerde CSS yazmadan önce var olan kurallarla isterleri karşılamanın mümkün olup olmadığını kontrol edin.
+
 ### Önemli konu olarak !important
 
 Projede CSS yazarken muhakkak !important gerekecektir. Ancak çok fazla !important yazarsanız HTML ve CSS kurgunuzu  gözden geçirmenizde fayda var. Özellikle desktop-first, yani masaüstü öncelikli CSS yazmanız; çok fazla !important kullanma ihtiyacını ortaya çıkaran bir unsur.
