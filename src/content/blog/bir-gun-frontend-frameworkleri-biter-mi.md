@@ -11,7 +11,7 @@ Her bir aracın kıymetli olduğunu peşinen belirteyim. Projeleri başka bir te
 
 ## React
 
-Çoğumuzun frontend kütüphanesi olarak ilk göz ağrı React, ilk versiyonundan bu yana üzerine katarak geldi ve eski sürümlerle uyumluluğunu uzun süre devam ettirdi - ki bu da eski versiyonda kalmış projeleri güncellemeye yardımcı oldu.
+Çoğumuzun ilk göz ağrısı olan frontend kütüphanesi React, ilk versiyonundan bu yana üzerine katarak geldi ve eski sürümlerle uyumluluğunu uzun süre devam ettirdi - ki bu da eski versiyonda kalmış projeleri güncellemeye yardımcı oldu.
 
 React'ı diğer kütüphane/framework'lerden ayıran en önemli özelliği bence şu: yeni yapılan ve yakın dönemde yapılmış neredeyse tüm frameworkler sözdizimi olarak React'ten etkilendi. Yeni çıkan çoğu araç, React'a aşina yazılımcıları kolay kazanmak için bu yola geçmiş olabilir.
 
