@@ -12,17 +12,17 @@
 		"astro:help": "astro --help"
 	},
 	"dependencies": {
-		"@astrojs/sitemap": "^3.1.5",
+		"@astrojs/sitemap": "^3.1.6",
 		"@astrojs/tailwind": "^5.0.2",
 		"@fontsource-variable/red-hat-text": "^5.0.17",
 		"@vitejs/plugin-basic-ssl": "^1.0.1",
-		"astro": "^4.10.1",
+		"astro": "^4.10.3",
 		"astro-icon": "^1.1.0",
 		"tailwindcss": "^3.4.4",
-		"vite": "^5.2.13"
+		"vite": "^5.3.1"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^1.8.0",
+		"@biomejs/biome": "^1.8.1",
 		"@iconify-json/ph": "^1.1.13"
 	}
 }
