@@ -7,17 +7,21 @@ description: "Nasıl bir geliştirici olduğunu merak ediyor musun?"
 
 Şu tür iyi bu tür kötü diye bir ayrım yapmak söz konusu olamaz. Her bir geliştiricinin edindiği deneyimin, herhangi bir projede sağlayacağı etki elbette değişkenlik gösterecektir. Hepimizin çalıştığı projelerde, yatkınlıklarına göre pozitif etkiyi en üst düzeyde sunmasını temenni ederek türleri açıklamaya başlayabilirim.
 
+
 ## Kullanıcı Deneyimi Tutkunları
 
 Bu sınıfa giren geliştiriciler, genelde iş analisti ile dirsek dirseğe çalışanlar oluyor. Genel olarak projelerde kullandığımız arayüz bileşenlerinin dinamiklerine hakim olan kullanıcı deneyimi tutkunları, kütüphane bilgisinin geniş olması koşuluyla projede kütüphane tercihini danışabileceğimiz meslektaşlarımız oluyor.
+
 
 ## Animasyon Hayranları
 
 Özellikle dijital ajanslarda çalışanların yoğun olduğu bu sınıftaki meslektaşlarımız CSS'i gerçekten çok seviyor. Javascript kullanmadan CSS ile çözülebilecek bir problemi, bu meslektaşlarımıza danışarak çözebiliriz. Sadece CSS değil, ayrıca animasyon dinamiklerine hakim olan bu meslektaşlarımız, animasyonların tüm tarayıcılarda uyumlu çalışması konusunda hassasiyete de sahipse proje dahilinde tasarımcı ile birlikte çalıştıkları alanda projeye kimlik kazandırma konusunda başarılı işler çıkarabilirler. 
 
+
 ## Kütüphane Düşmanları
 
 node_modules klasöründe çok sayıda klasör görünce strese giren bu nadide meslektaşlarımız, genel olarak kütüphane yüklemeden problemleri çözme niyetindedir. Uzun vadede kütüphane bağımlılığının azalması konusunda etkin rol oynarlar. Güncel tutulmayan kütüphanelerin bir süre sonra uyumsuzluklarla sorun çıkaracağının bilince olan bu meslektaşlarımızın, tekerleği yeniden icat ettiği (ki bu kötü bir şey değil, belki de proje benzersiz bir 'tekerleğe' ihtiyaç duyuyordur) projelerde performans, erişilebilirlik ve tarayıcı uyumluluklarına dikkat etmesi kritik önem taşıyor.
+
 
 ## Javascript Sevdalıları
 
