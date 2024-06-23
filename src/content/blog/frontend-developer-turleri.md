@@ -11,9 +11,9 @@ description: "Nasıl bir geliştirici olduğunu merak ediyor musun?"
 
 Bu sınıfa giren geliştiriciler, genelde iş analisti ile dirsek dirseğe çalışanlar oluyor. Genel olarak projelerde kullandığımız arayüz bileşenlerinin dinamiklerine hakim olan kullanıcı deneyimi tutkunları, kütüphane bilgisinin geniş olması koşuluyla projede kütüphane tercihini danışabileceğimiz meslektaşlarımız oluyor.
 
-## Animasyon Hayranları
+## Animasyon Hayranları
 
-Özellikle dijital ajanslarda çalışanların yoğun olduğu bu sınıftaki meslektaşlarımız CSS'i gerçekten çok seviyor. Javascript kullanmadan CSS ile çözülebilecek bir problemi, bu meslektaşlarımıza danışarak çözebiliriz. Sadece CSS değil, ayrıca animasyon dinamiklerine hakim olan bu meslektaşlarımız, animasyonların tüm tarayıcılarda uyumlu çalışması konusunda hassasiyete de sahipse proje dahilinde tasarımcı ile birlikte çalıştıkları alanda projeye kimlik kazandırma konusunda başarılı işler çıkarabilirler.
+Özellikle dijital ajanslarda çalışanların yoğun olduğu bu sınıftaki meslektaşlarımız CSS'i gerçekten çok seviyor. Javascript kullanmadan CSS ile çözülebilecek bir problemi, bu meslektaşlarımıza danışarak çözebiliriz. Sadece CSS değil, ayrıca animasyon dinamiklerine hakim olan bu meslektaşlarımız, animasyonların tüm tarayıcılarda uyumlu çalışması konusunda hassasiyete de sahipse proje dahilinde tasarımcı ile birlikte çalıştıkları alanda projeye kimlik kazandırma konusunda başarılı işler çıkarabilirler. 
 
 ## Kütüphane Düşmanları
 
