@@ -9,6 +9,7 @@ Her bir aracın kıymetli olduğunu peşinen belirteyim. Projeleri başka bir te
 
 İyisiyle kötüsüyle deneyimlemiş olduğum framework ve kütüphanelerin geleceği hakkında öngörülerim şöyle:
 
+
 ## React
 
 Çoğumuzun ilk göz ağrısı olan frontend kütüphanesi React, ilk versiyonundan bu yana üzerine katarak geldi ve eski sürümlerle uyumluluğunu uzun süre devam ettirdi - ki bu da eski versiyonda kalmış projeleri güncellemeye yardımcı oldu.
@@ -29,9 +30,11 @@ Angular maalesef React kadar kolay bir sözdizimine sahip değil. State yaklaş�
 
 Her ne kadar Angular'ın istediği şekilde yapınızı kurmanız gerekse de bir açıdan bu iyi. Özellikle kurumsal projelerde bu zorunluluk proje sağlığı için olumlu. Avrupa'daki çoğu firma bu katı yapısından dolayı Angular kullanmaya devam ediyor.
 
+
 ### Angular'ın geleceği var mı?
 
 Angular'ın sadece eski projeleri yaşatacak kadar var olacağını düşünüyorum. Küçük bir topluluk olarak kalacağını ve büyümesinin imkansız olduğunu düşünüyorum. React'ın dominasyonunu ezip geçebilecek yapısı bence yok.
+
 
 ## Vue
 
@@ -43,17 +46,21 @@ Geliştirici deneyimini çıktığı zamana göre düşününce en üst düzeyde
 
 Next, meta framework'ü çoğu yeni frontend geliştiriciye tanıtan bir meta framework oldu. Özellikle 12. versiyona kadar üstüne katarak ve topluluğunu artırarak çok iyi geldi. Ancak 13. versiyonda React'ın **server component** kavramını tanıtmasıyla kafa karışıkları da ortaya çıktı. Özellikle nispeten kolay olmayan proje güncellemesi, pages router'ın yanına gelen app router 12. versiyondan 13. versiyona geçişleri zorlaştırdı.
 
+
 ### Next'in geleceği var mı?
 
 Next, React ile geliştirilecek siteler için başlangıç kiti oldu. Ancak her yeni versiyonda proje güncellemesinin kolay olmaması ve kendi ortamları dışında projeyi barındırınca her özelliğini kullanamamak Next'in ömrünü olumsuz etkileyecektir. Next'in gelecekte tamamen Vercel'e bağlı bir ürün haline geleceğini düşünüyorum. Bu da şu anda yayında olan projelerin büyük çoğunluğunun ya güncellenmeyeceğini, ya da başka bir framework ile yapılacağı anlamına geliyor.
+
 
 ### Astro
 
 Favorim Astro, bence sağlam adımlarla geliyor. Tabi bu şekilde devam etmezlerse sadece ajansların kullandığı bir araçtan ibaret kalır. Geliştirici deneyimini Vue gibi üst düzeyde sunan Astro, hızlı başlangıçlar ve baş ağrısından uzak kalmak için güzel bir seçenek. Ömrünün React ile paralel gideceğini düşünüyorum - tabi şimdiki gibi geliştirmelere devam ettikleri sürece.
 
+
 ## Sonuç
 
 Kullanacağınız herhangi bir framework belki bir gün ömrünü tamamlamış olacak. Şu an adını bile bilmediğiniz, ya da duysanız da onu herhangi bir projenizde kullanmadığınız frameworkler oldu ve gelecekte de olacak. Ne kullanırsanız kullanın, proje ihtiyaçları üç aşağı beş yukarı aynı kalacak. Tercihlerinizi yaparken projenizin ömrünü de düşünerek seçimler yapmanızı tavsiye ederim.
+
 
 ### Bonus: jQuery 
 
