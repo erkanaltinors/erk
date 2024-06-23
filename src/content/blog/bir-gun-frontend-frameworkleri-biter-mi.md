@@ -30,8 +30,7 @@ Angular maalesef React kadar kolay bir sözdizimine sahip değil. State yaklaş�
 
 Her ne kadar Angular'ın istediği şekilde yapınızı kurmanız gerekse de bir açıdan bu iyi. Özellikle kurumsal projelerde bu zorunluluk proje sağlığı için olumlu. Avrupa'daki çoğu firma bu katı yapısından dolayı Angular kullanmaya devam ediyor.
 
-
-### Angular'ın geleceği var mı?
+### Angular'ın geleceği var mı?
 
 Angular'ın sadece eski projeleri yaşatacak kadar var olacağını düşünüyorum. Küçük bir topluluk olarak kalacağını ve büyümesinin imkansız olduğunu düşünüyorum. React'ın dominasyonunu ezip geçebilecek yapısı bence yok.
 
