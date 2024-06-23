@@ -1,5 +1,5 @@
 ---
-title: "Front-end Developer Türleri"
+title: "Frontend Developer Türleri"
 description: "Nasıl bir geliştirici olduğunu merak ediyor musun?"
 ---
 
