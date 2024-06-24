@@ -57,6 +57,3 @@ a:not([class]){
 ul:not([class]){
     @apply list-disc list-inside;
 }
-ul>li:not(:last-child) {
-    @apply mb-2;
-}

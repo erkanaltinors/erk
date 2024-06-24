@@ -19,13 +19,13 @@ const blogPosts = await getCollection("blog");
  <section class="py-10">
   <div class="container max-w-[600px]">
    <h2 class="blue-pill-border relative z-10 mb-5 mt-0 inline-block text-3xl md:text-4xl">Blog Yazıları</h2>
-   <ul class="grid gap-2" role="list">
+   <ul class="grid" role="list">
     {
      blogPosts.map((post) => (
-      <li role="listitem" class="relative border-b border-gray-300 last:border-0 hover:border-transparent">
+      <li role="listitem" class="relative border-b border-gray-300 last:border-0 hover:border-transparent transition hover:bg-slate-950 hover:text-white mb-2">
        <a
         href={`blog/${post.slug}`}
-        class="group box-border block h-full w-full rounded-sm p-2 transition  hover:bg-slate-950 hover:text-white focus:outline-none"
+        class="group box-border block h-full w-full rounded-sm p-2 md:py-4 focus:outline-none"
        >
         <p class="m-0 pr-6 font-semibold">{post.data.title}</p>
         <Icon name="ph:arrow-up-right" class="absolute right-2 top-2" />
