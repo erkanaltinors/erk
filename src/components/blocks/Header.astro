@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
 ---
 
 <header class="sticky top-1 z-50 mt-1">
@@ -8,18 +8,12 @@ import { Image } from "astro:assets";
    <div class="flex gap-2">
     <div class="justfiy-center flex items-center rounded-sm p-1">
      <a href="/" class="text-inherit">
-      <div class="flex gap-2">
-       <div>
-        <Image
-          src='/android-chrome-512x512.png'
-          width={24}
-          height={24}
-          alt='Logo'
-          loading='eager'
-        />
-       </div>
+      <div class="flex gap-2 items-center">
+        <div>
+          <Icon name="ph:warehouse" size={32}/>
+        </div>
        <div>Erkan Altınörs</div>
-      </div>
+       </div>
      </a>
     </div>
    </div>

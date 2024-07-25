@@ -26,7 +26,7 @@ export default defineConfig({
 		}),
 		icon({
 			include: {
-				ph: ["arrow-up-right"],
+				ph: ["arrow-up-right", "warehouse"],
 			},
 		}),
 		sitemap(),
