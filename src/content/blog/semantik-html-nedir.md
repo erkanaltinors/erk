@@ -54,7 +54,7 @@ ve İkinci örneğimiz:
 
 Dünya haritası örneğine tekrar dönelim. Semantik HTML örneğinde görüldüğü gibi her bir html bloğunun nereye ait olduğu, nasıl bir çıktı verebileceğini az çok tahmin edebiliyoruz. Birbirlerinin sınırlarını kesin belirten niteliğiyle semantik HTML yazımı geliştirici deneyimine olumlu katkısını sunuyor.
 
-## Semantik HTML yazmazsak Ne Olur?
+## Semantik HTML Yazmazsak Ne Olur?
 
 HTML, bir işaretleme dili olduğu için tarayıcınızda veya editörünüzde (özel bir eklenti ve benzer araçlar yok ise) bir hatayla karşılaşmanız mümkün değil.
 Tarayıcı, semantik yazmasanız dahi sayfanızın çıktısını gösterecektir.
