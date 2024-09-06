@@ -84,7 +84,7 @@ HTML Attribute'leri çoğu zaman sizin Javascript yazma ihtiyacınızı ortadan 
 
 #### Block Level ve Inline Level HTML etiketleri
 
-HTML kurgusunun en önemli ayağını oluşturan block level/inline level etiketleri öğrenmeniz gerekiyor. Bu sayede, HTML kurgunuzu oluşturduğundza sayfanın neresinde hangi elemanların bulunacağını tahmin edebilirsiniz. Hızlı sayfa oluşturmak için bu konuyu iyi çalışmanızı tavsiye ederim.
+HTML kurgusunun en önemli ayağını oluşturan block level/inline level etiketleri öğrenmeniz gerekiyor. Bu sayede, HTML kurgunuzu oluşturduğunuzda sayfanın neresinde hangi elemanların bulunacağını tahmin edebilirsiniz. Hızlı sayfa oluşturmak için bu konuyu iyi çalışmanızı tavsiye ederim.
 
 ## CSS: Projenin makyajı
 
