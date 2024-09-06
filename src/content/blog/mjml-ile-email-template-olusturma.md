@@ -12,7 +12,7 @@ MJML, Mailjet ekibinin oluşturduğu bir işaretleme dilidir.
 [Visual Studio Code eklentisi]('https://marketplace.visualstudio.com/items?itemName=mjmlio.vscode-mjml') olarak ya da direkt tarayıcıda çalışan [online editörleri]('https://mjml.io/try-it-live') mevcut.
 İşe başlamadan önce ister eklentiyi kurun, isterseniz online olarak deneyin.
 
-## Sayfa yapısının Oluşturulması
+## Sayfa Yapısının Oluşturulması
 
 E-mail templatemizin ana yapısı aşağıdaki gibidir.
 
