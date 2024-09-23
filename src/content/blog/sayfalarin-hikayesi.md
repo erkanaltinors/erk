@@ -1,6 +1,6 @@
 ---
 title: "Sayfaların hikayesi"
-description: "Sayfaların render türlerinin arama motoru için önemini vurgulayan kısa bir hikaye"
+description: "Web sayfalarında uygulanan render türlerinin arama motoru için önemini vurgulayan kısa bir hikaye"
 ---
 
 Bir zamanlar, web dünyasının en ünlü kulübü olan Kaynak (The Source), sadece en iyi web sayfalarının kabul edildiği bir mekândı. 
