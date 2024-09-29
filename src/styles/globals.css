@@ -55,5 +55,5 @@ a:not([class]){
 }
 
 ul:not([class]){
-    @apply list-disc list-inside;
+    @apply list-disc list-inside text-base md:text-lg;
 }
