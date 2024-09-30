@@ -5,10 +5,10 @@ description: "Regex'ten faydalanarak sitenizin kullanıcıları için şifre olu
 
 Şifre oluşturmak ne kadar can sıkıcı olsa da, kullanıcıların daha güçlü şifre oluşturmalarında yardımcı olabiliriz.
 
-Güçlü şifre oluşturmalarında yardımcı olarak kod bloğunu aşağıda paylaşıyorum.
+Güçlü şifre oluşturmalarında yardımcı olarak kod bloğunu [buradan]('https://stackblitz.com/edit/vitejs-vite-k1topq?file=src%2FApp.tsx') inceleyebilirsiniz.
 
 Örnekte, direkt olarak bir şifrenin tüm kuralları uygulanmayıp, yardımcı metin ile uyumlu düzenli ifadeler kullanılmıştır.
 
 Şifrenizin validasyonu için düzenli ifade yazdığınızda açıkladığınız tüm küçük kurallara uyan tek bir düzenli ifade yazmanız gerektiğini unutmayın.
 
-<iframe src="https://stackblitz.com/edit/vitejs-vite-k1topq?embed=1&file=src%2FApp.tsx"/>
+
