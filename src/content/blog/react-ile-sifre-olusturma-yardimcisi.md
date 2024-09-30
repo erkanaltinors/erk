@@ -1,5 +1,5 @@
 ---
-title: "Regex ile Şifre Oluşturma Yardımcısı"
+title: "React ile Şifre Oluşturma Yardımcısı"
 description: "Regex'ten faydalanarak sitenizin kullanıcıları için şifre oluşturmalarında yardımcı olmanızın yolu"
 ---
 
