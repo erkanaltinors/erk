@@ -5,7 +5,7 @@ type Props = {
 	description: string;
 };
 
-const currentPath = Astro.url.origin;
+const currentPath = Astro.url.href;
 const { title, lang, description } = Astro.props as Props;
 import "@/styles/globals.css";
 import "@fontsource-variable/red-hat-text";
