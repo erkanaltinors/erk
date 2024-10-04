@@ -2,9 +2,10 @@
 type Props = {
 	title: string;
 	lang: string;
-	description: string | undefined;
+	description: string;
 };
 
+const currentPath = Astro.url.origin;
 const { title, lang, description } = Astro.props as Props;
 import "@/styles/globals.css";
 import "@fontsource-variable/red-hat-text";
@@ -16,9 +17,28 @@ import Header from "../components/blocks/Header.astro";
 <html lang={lang}>
  <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!--Primary Meta Tags -->
+  <meta name="title" content={title}/>
   <meta name="description" content={description}/>
-  <link rel="icon" href="/favicon.ico" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content={title}/>
+  <meta property="og:description" content={description}/>
+  <meta property="og:url" content={currentPath}/>
+  <meta property="og:image" content="https://erkanaltinors.com/apple-touch-icon.png"/>
+  <meta property="og:image:alt" content={description} />
+  <meta property="og:image:width" content="180">
+  <meta property="og:image:height" content="180">
+  <!-- Twitter -->
+  <meta property="twitter:title" content={title}>
+  <meta property="twitter:description" content={description}>
+  <meta property="twitter:site" content="@erkanaltinors">
+  <meta property="twitter:creator" content="@erkanaltinors">
+  <meta property="twitter:image" content=https://erkanaltinors.com/apple-touch-icon.png">
+  <meta property="twitter:image:alt" content={description}>
+  <slot name="author"/>
+  <slot name="page-type"/>
+  <link rel="shortcut icon" href="/favicon.ico"/>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />

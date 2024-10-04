@@ -18,6 +18,8 @@ const { Content } = await entry.render();
 ---
 
 <Layout title={entry.data.title} lang="tr" description={entry.data.description}>
+<meta property="article:author" content="Erkan Altınörs" slot="author"/>
+<meta property="og:type" content="article" slot="page-type" />
  <section class="py-10">
   <div class="container max-w-[600px]">
    <h1 class="text-4xl md:text-5xl">{entry.data.title}</h1>
