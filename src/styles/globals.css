@@ -15,7 +15,7 @@ input {
  @apply !block !bg-lime-500 !p-2 !text-white;
 }
 body {
- @apply bg-violet-50;
+ @apply bg-[#fdfdfd];
 }
 
 .blue-pill-border {

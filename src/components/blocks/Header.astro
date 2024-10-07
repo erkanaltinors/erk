@@ -2,21 +2,11 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<header class="sticky top-1 z-50 mt-1">
- <div class="container max-w-[600px]">
-  <nav class="group rounded-sm bg-pink-900 p-1 text-white" role="navigation">
-   <div class="flex gap-2">
-    <div class="justfiy-center flex items-center rounded-sm p-1">
-     <a href="/" class="text-inherit">
-      <div class="flex gap-2 items-center">
-        <div>
-          <Icon name="ph:warehouse" size={32}/>
-        </div>
-       <div>Erkan Altınörs</div>
-       </div>
+<header class="fixed top-1 left-1 z-50 mt-1">
+  <nav class="group bg-white text-black ring-2 ring-black inline-block" role="navigation">
+     <a href="/" class="block p-1 lg:p-4">
+          <Icon name="ph:warehouse" size={42} class="hidden lg:block"/>
+          <Icon name="ph:warehouse" size={32} class="lg:hidden"/>
      </a>
-    </div>
-   </div>
   </nav>
- </div>
 </header>
