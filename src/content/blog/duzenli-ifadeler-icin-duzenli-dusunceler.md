@@ -11,11 +11,11 @@ Javascript ile Regex (düzenli ifade) yazmak bazen gerçekten çile olabiliyor. 
 
 ## İhtiyacı doğru belirleyin
 
-Düzenli ifadeleri çoğunlukla son kullanıcıdan belli formatta veri almakta ve bu alınan verilerin doğru formatta olup olmadığını kontrol etmekte kullanırız. Genel olarak düzenli ifade kullanmaktaki amacımız, kullanıcı deneyimi üst düzeyde tutmak ve sağlıklı veri toplamaktır. Pratikte düzenli ifadeleri en çok form validasyonlarında inputlar için kullanırız.
+Düzenli ifadeleri çoğunlukla son kullanıcıdan belli formatta veri almakta ve bu alınan verilerin doğru formatta olup olmadığını kontrol etmekte kullanırız. Genel olarak düzenli ifade kullanmaktaki amacımız, kullanıcı deneyimini üst düzeyde tutmak ve sağlıklı veri toplamaktır. Pratikte düzenli ifadeleri en çok form validasyonlarında inputlar için kullanırız.
 
-İsterleri iş analisti kadar iyi bilemeyebiliriz, ancak bu doğru kurgu ile hazırlanmış bir düzenli ifade oluşturmamıza engel değildir. İsteri tam anlayamadığınızda ve ya eksik olduğunu düşündüğünüz noktada birkaç soru ile isteri netleştirebilirsiniz. 
+İsterleri iş analisti kadar iyi bilemeyebiliriz. Ancak bu doğru kurgu ile hazırlanmış bir düzenli ifade oluşturmamıza engel değildir. İsteri tam anlayamadığınızda ve ya eksik olduğunu düşündüğünüz noktada birkaç soru ile isteri netleştirebilirsiniz. 
 
-Örneğin bir ad soyad alanına düzenli ifade yazmanız gerekiyor, ve iş analisti sadece harf ve boşluk kullanılmasını belirtti. Burada birkaç eksik sezdiğinizi ve ardından iş analistine bununla ilgili ekstra bilgi almak için danışmanız gerektiğini farkettiniz. İş analisti, ilettiği isterlerin dışında da isterlerde bulunabilir. Bunu iş bitiminden sonra almak yerine aşağıdaki gibi birkaç soru ile genişletebiliriz.
+Örneğin bir ad soyad inputu için düzenli ifade yazmanız gerekiyor. İş analisti, sadece harf ve boşluk kullanılmasını belirtti. Burada birkaç eksik sezdiniz ve ardından iş analistine bununla ilgili ekstra bilgi almak için danışmanız gerektiğini farkettiniz. İş analisti, ilettiği isterlerin dışında da isterlerde bulunabilir. Bunu, iş bitiminden sonra almak yerine aşağıdaki gibi birkaç soru ile genişletebiliriz.
 
 - Ad soyad inputu için maksimum karakter ve minimum karakter sayısı nedir?
 - Ad soyad boşluk ve ya tire ile bitebilir mi?
@@ -23,7 +23,7 @@ Düzenli ifadeleri çoğunlukla son kullanıcıdan belli formatta veri almakta v
 - Soyadın tamamı büyük harf ile yazılsın mı?
 - Boşluk karakteri birden fazla kez kullanılabilir mi?
 
-Görünürde basit olan bir düzenli ifade için dahi, düşünüldüğünde ne kadar çok soru türetilebildiğini görebilirsiniz. Daha kompleks yapıda isterler olduğunda bu soru sayısı da muhtemelen daha fazla olacaktır. Ancak bu gözünü korkutmasın. Çünkü soru sayısı ne kadar fazla ise o kadar doğruya en yakın düzenli ifade oluşturmanız mümkün oluyor.
+Görünürde basit olan bir düzenli ifade için dahi, düşünüldüğünde ne kadar çok soru türetilebildiğini görebilirsiniz. Daha kompleks yapıda isterler olduğunda bu soru sayısı da muhtemelen daha fazla olacaktır. Ancak bu gözünüzü korkutmasın. Çünkü soru sayısı ne kadar fazla ise, doğruya en yakın düzenli ifade oluşturma ihtimaliniz bir o kadar artıyor.
 
 ## Pozitif düşünün
 
