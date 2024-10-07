@@ -10,9 +10,9 @@ const blogPosts = await getCollection("blog");
 <Layout lang="tr" title="Erkan Altınörs" description="Frontend Developer">
  <section class="py-14">
   <div class="container">
-    <div class="bg-gray-300 ring-2 ring-gray-400 p-1 lg:p-4 flex lg:items-center gap-2">
+    <div class="bg-gray-300 ring-2 ring-gray-400 p-1 lg:p-4 flex lg:items-center gap-2 relative">
       <div>
-        <Image src={avatar} width={80} height={80} alt="Avatar" class="hidden lg:block lg:relative lg:-top-10 lg:-left-10"/>
+        <Image src={avatar} width={100} height={100} alt="Avatar" class="hidden lg:absolute lg:-top-10 lg:-left-10"/>
         <Image src={avatar} width={40} height={40} alt="Avatar" class="lg:hidden"/>
       </div>
       <div>
