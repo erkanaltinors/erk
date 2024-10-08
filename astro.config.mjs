@@ -2,7 +2,6 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
 import { defineConfig } from "astro/config";
-
 // https://astro.build/config
 export default defineConfig({
 	site: "https://erkanaltinors.com",
@@ -14,6 +13,9 @@ export default defineConfig({
 		},
 	},
 	image: {
+		service: {
+			entrypoint: "astro/assets/services/squoosh",
+		},
 		remotePatterns: [
 			{
 				protocol: "https",
@@ -26,7 +28,7 @@ export default defineConfig({
 		}),
 		icon({
 			include: {
-				ph: ["arrow-up-right", "warehouse"],
+				ph: ["arrow-up-right"],
 			},
 		}),
 		sitemap(),

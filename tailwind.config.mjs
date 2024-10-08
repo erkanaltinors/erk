@@ -16,13 +16,10 @@ module.exports = {
 				md: "20px",
 			},
 			screens: {
-				"2xl": "600px",
+				"2xl": "1200px",
 			},
 		},
 		extend: {
-			colors: {
-				white: "#efefef",
-			},
 			fontFamily: {
 				sans: ["Red Hat Text Variable", "Jura", "ui-sans-serif", "system-ui"],
 			},

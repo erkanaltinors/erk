@@ -20,9 +20,9 @@ const { Content } = await entry.render();
 <Layout title={entry.data.title} lang="tr" description={entry.data.description}>
 <meta property="article:author" content="Erkan Altınörs" slot="author"/>
 <meta property="og:type" content="article" slot="page-type" />
- <section class="py-14">
+ <section class="pb-10">
   <div class="container max-w-[600px]">
-   <h1 class="text-4xl md:text-5xl">{entry.data.title}</h1>
+   <h1 class="text-4xl md:text-5xl mt-4">{entry.data.title}</h1>
    <p class="text-xl md:text-2xl text-gray-600 mb-8">{entry.data.description}</p>
    <div class="blog-wrapper">
        <Content />

@@ -1,12 +1,15 @@
 ---
-import { Icon } from "astro-icon/components";
+import name from "@images/name.svg";
+import { Image } from "astro:assets";
 ---
 
-<header class="fixed top-2 left-[10px] lg:top-1 lg:left-1 z-50">
-  <nav class="group bg-gray-600 text-white ring-2 ring-black inline-block" role="navigation">
-     <a href="/" class="block p-1 lg:p-4">
-          <Icon name="ph:warehouse" size={42} class="hidden lg:block"/>
-          <Icon name="ph:warehouse" size={32} class="lg:hidden"/>
+<header class="sticky top-0 w-full z-50 bg-white">
+  <nav class=" max-w-full border-b-2 lg:border-b-4 border-black" role="navigation">
+    <div>
+           <a href="/" class="min-h-10 lg:min-h-20 flex items-center pl-4">
+          <Image src={name} width={320} alt="Erkan Altınörs Text Image" class="hidden lg:block" />
+          <Image src={name} width={150} alt="Erkan Altınörs Text Image" class="lg:hidden" />
      </a>
+    </div>
   </nav>
 </header>
