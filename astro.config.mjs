@@ -13,9 +13,6 @@ export default defineConfig({
 		},
 	},
 	image: {
-		service: {
-			entrypoint: "astro/assets/services/squoosh",
-		},
 		remotePatterns: [
 			{
 				protocol: "https",
