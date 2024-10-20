@@ -1,14 +1,9 @@
----
-import name from "@images/name.svg";
-import { Image } from "astro:assets";
----
-
 <header class="sticky top-0 w-full z-50 bg-white">
   <nav class=" max-w-full border-b-2 lg:border-b-4 border-black" role="navigation">
     <div>
            <a href="/" class="min-h-10 lg:min-h-20 flex items-center pl-4">
-          <Image src={name} width={320} alt="Erkan Altınörs Text Image" class="hidden lg:block" />
-          <Image src={name} width={150} alt="Erkan Altınörs Text Image" class="lg:hidden" />
+          <img src='/name.svg' width={320} height={49} alt="Erkan Altınörs Text Image" class="hidden lg:block" />
+          <img src='/name.svg' width={150} height={23} alt="Erkan Altınörs Text Image" class="lg:hidden" />
      </a>
     </div>
   </nav>
