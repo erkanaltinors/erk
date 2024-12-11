@@ -19,7 +19,7 @@ Sadece bir tane render metodu diğerlerinden farklı bir çıktı elde etmemizi 
 
 Jamstack de statik sayfaların bu avantajlarından faydalanarak "Neden en başa dönüp hızlı ve güvenilir web siteleri yapmıyoruz?" sorusuna cevap veriyor. Böylece hepimizin yoğun veri yüklü web siteleri rahat bir nefes alır diye düşünüldü.
 
-Hayat eskisinden hızlı, etkisinden çok daha fazla etkileşimli. Projelerin de buna ihtiyacı var. Jamstack ile yapılan projelerin de en büyük sıkıntısı bu: her zaman en günceli sunamayabiliyor. Peki Jamstack buna rağmen kendi popülaritesini nasıl koruyor?
+Hayat eskisinden hızlı, eskisinden çok daha fazla etkileşimli. Projelerin de buna ihtiyacı var. Jamstack ile yapılan projelerin de en büyük sıkıntısı bu: her zaman en günceli sunamayabiliyor. Peki Jamstack buna rağmen kendi popülaritesini nasıl koruyor?
 
 ## Güvenilirlik
 
