@@ -28,9 +28,7 @@ export default defineConfig({
 				ph: ["arrow-up-right"],
 			},
 		}),
-		sitemap({
-			filter: (page) => page !== "https://erkanaltinors.com/email",
-		}),
+		sitemap(),
 	],
 	build: {
 		format: "file",
