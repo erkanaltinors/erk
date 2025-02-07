@@ -19,7 +19,7 @@ type TPost = {
    <h2 class="text-4xl lg:text-5xl mt-0">Blog Yazıları</h2>
        <ul class="grid lg:grid-cols-2 gap-4" role="list">
     {
-     blogPosts.map((post: TPost) => (
+     blogPosts.sort((a: TPost,b:TPost) => a.data.title.localeCompare(b.data.title)).map((post: TPost) => (
       <li role="listitem" class="bg-white w-full lg:w-auto [&:nth-child(6n+1)]:bg-pink-400 [&:nth-child(6n+2)]:bg-blue-400  [&:nth-child(6n+3)]:bg-amber-400 [&:nth-child(6n+4)]:bg-teal-400  [&:nth-child(6n+5)]:bg-cyan-400 [&:nth-child(6n+6)]:bg-rose-400 relative transition drop-shadow-[3px_3px_0_rgb(0,0,0)] lg:drop-shadow-[6px_6px_0_rgb(0,0,0)] ring-2 ring-black hover:drop-shadow-none text-black">
        <a
         href={`blog/${post.slug}`}
