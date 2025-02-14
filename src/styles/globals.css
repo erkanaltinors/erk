@@ -3,55 +3,54 @@
 @tailwind utilities;
 
 p {
- @apply my-3 text-base md:text-lg;
+	@apply my-3 text-base md:text-lg;
 }
 
 input {
- @apply bg-white;
+	@apply bg-white;
 }
 
 .copy-to-clipboard-button,
 .copy-to-clipboard-button:hover {
- @apply !block !bg-lime-500 !p-2 !text-white;
+	@apply !block !bg-lime-500 !p-2 !text-white;
 }
 
-
 .blue-pill-border {
- @apply before:absolute before:-bottom-1 before:block before:h-1 before:w-full before:rounded-full before:bg-blue-400 before:content-[''] after:absolute after:-bottom-1 after:block after:h-1 after:w-1/2 after:rounded-l-full after:bg-blue-700 after:content-[''];
+	@apply before:absolute before:-bottom-1 before:block before:h-1 before:w-full before:rounded-full before:bg-blue-400 before:content-[''] after:absolute after:-bottom-1 after:block after:h-1 after:w-1/2 after:rounded-l-full after:bg-blue-700 after:content-[''];
 }
 
 pre {
- @apply rounded-sm p-2;
+	@apply rounded-sm p-2;
 }
 
 pre code {
- @apply text-sm;
+	@apply text-sm;
 }
 
-h2{
-    @apply text-3xl mb-4 mt-6;
+h2 {
+	@apply text-3xl mb-4 mt-6;
 }
 
 h3 {
-    @apply text-2xl  mb-6 mt-8;
+	@apply text-2xl  mb-6 mt-8;
 }
 
 h4 {
-    @apply text-xl mb-4 mt-6;
+	@apply text-xl mb-4 mt-6;
 }
 
-blockquote{
- @apply px-2 border-l-2 border-violet-600 bg-violet-100 rounded-sm;
+blockquote {
+	@apply px-2 border-l-2 border-violet-600 bg-violet-100 rounded-sm;
 }
 
 blockquote > *:last-child {
-@apply m-0;
+	@apply m-0;
 }
 
-a:not([class]){
-    @apply text-blue-700
+a:not([class]) {
+	@apply text-blue-700;
 }
 
-ul:not([class]){
-    @apply list-disc list-inside text-base md:text-lg;
+ul:not([class]) {
+	@apply list-disc list-inside text-base md:text-lg;
 }
