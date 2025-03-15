@@ -7,9 +7,9 @@ type Props = {
 
 const currentPath = Astro.url.href;
 const { title, lang, description } = Astro.props as Props;
+import Header from "@/components/blocks/Header.astro";
 import "@/styles/globals.css";
 import "@fontsource-variable/red-hat-text";
-import Header from "../components/blocks/Header.astro";
 ---
 
 <!doctype html>
