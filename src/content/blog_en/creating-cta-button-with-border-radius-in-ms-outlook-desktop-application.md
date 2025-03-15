@@ -11,7 +11,7 @@ Building e-mail templates for old school Microsoft Outlook is challenging. There
 <w:anchorlock/>
 <center>
 <![endif]-->
-<a rel="noopener" target="_blank" href="http://litmus.com" style="background-color:#1F7F4C;border-radius:5px;color:#ffffff;display:inline-block;font-size: 18px; font-family: Helvetica, Arial, sans-serif;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;width:170px;-webkit-text-size-adjust:none;">I am a button &rarr;</a>
+<a rel="noopener" target="_blank" href="http://erkanaltinors.com" style="background-color:#1F7F4C;border-radius:5px;color:#ffffff;display:inline-block;font-size: 18px; font-family: Helvetica, Arial, sans-serif;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;width:170px;-webkit-text-size-adjust:none;">I am a button &rarr;</a>
 <!--[if mso]>
 </center>
 </v:roundrect>
