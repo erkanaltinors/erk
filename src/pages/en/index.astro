@@ -1,0 +1,41 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+import { getCollection } from "astro:content";
+const blogPosts = await getCollection("blog_en");
+type TPost = {
+	slug: string;
+	data: {
+		title: string;
+		description: string;
+	};
+};
+---
+
+<Layout lang="en" title="Erkan Altınörs" description="Frontend Developer">
+ <section class="py-5 lg:py-10">
+  <div class="container">
+    <h1 class="hidden">Erkan Altınörs</h1>
+   <h2 class="text-4xl lg:text-5xl mt-0">Articles<h2>
+       <ul class="grid lg:grid-cols-2 gap-4" role="list">
+    {
+     blogPosts.sort((a: TPost,b:TPost) => a.data.title.localeCompare(b.data.title)).map((post: TPost) => (
+      <li role="listitem" class="bg-white w-full lg:w-auto [&:nth-child(6n+1)]:bg-pink-400 [&:nth-child(6n+2)]:bg-blue-400  [&:nth-child(6n+3)]:bg-amber-400 [&:nth-child(6n+4)]:bg-teal-400  [&:nth-child(6n+5)]:bg-cyan-400 [&:nth-child(6n+6)]:bg-rose-400 relative transition drop-shadow-[3px_3px_0_rgb(0,0,0)] lg:drop-shadow-[6px_6px_0_rgb(0,0,0)] ring-2 ring-black hover:drop-shadow-none text-black">
+       <a
+        href={`en/blog/${post.slug}`}
+        class="group box-border block h-full w-full rounded-sm p-2 md:p-4 focus:outline-none"
+       >
+        <p class="m-0 pr-6 lg:pr-8 font-semibold lg:font-normal text-xl lg:text-2xl">{post.data.title}</p>
+        <Icon name="ph:arrow-up-right" size={32} class="absolute right-2 top-2 hidden lg:block" />
+        <Icon name="ph:arrow-up-right" size={24} class="absolute right-2 top-2 lg:hidden" />
+        <div>
+         <p class="m-0 text-base lg:text-lg">{post.data.description}</p>
+        </div>
+       </a>
+      </li>
+     ))
+    }
+   </ul>
+  </div>
+ </section>
+</Layout>

@@ -1,12 +1,19 @@
 ---
+type Props = {
+	lang: string;
+};
+const { lang } = Astro.props as Props;
 ---
 
 <header class="sticky top-0 w-full z-50 bg-white">
   <nav class=" max-w-full border-b-2 lg:border-b-4 border-black" role="navigation">
-    <div>
-      <a href="/" class="min-h-10 lg:min-h-20 inline-flex items-center pl-4">
+    <div class="flex justify-between items-center px-4">
+      <a href="/" class="min-h-10 lg:min-h-20 inline-flex items-center">
        <p class="font-semibold m-0 text-2xl md:text-4xl lg:text-5xl">Erkan Altınörs</p>
      </a>
+     {
+      lang === "tr" ? <a class="text-xl sm:text-2xl md:text-5xl" href="/en">🇺🇸</a> : <a class="text-xl sm:text-2xl md:text-5xl" href="/">🇹🇷</a>
+     }
     </div>
   </nav>
 </header>
