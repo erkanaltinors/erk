@@ -9,7 +9,7 @@ E-mail template oluşturmak, herhalde çoğu Frontend Developer'ın karın ağr�
 
 MJML, Mailjet ekibinin oluşturduğu bir işaretleme dilidir. 
 
-[Visual Studio Code eklentisi]('https://marketplace.visualstudio.com/items?itemName=mjmlio.vscode-mjml') olarak ya da direkt tarayıcıda çalışan [online editörleri]('https://mjml.io/try-it-live') mevcut.
+<a href="https://marketplace.visualstudio.com/items?itemName=mjmlio.vscode-mjml" target="_blank" rel="nofollow">Visual Studio Code eklentisi</a> olarak ya da direkt tarayıcıda çalışan <a href="https://mjml.io/try-it-live" target="_blank" rel="nofollow">online editörleri</a> mevcut.
 İşe başlamadan önce ister eklentiyi kurun, isterseniz online olarak deneyin.
 
 ## Sayfa Yapısının Oluşturulması
