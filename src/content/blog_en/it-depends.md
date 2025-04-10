@@ -28,7 +28,7 @@ In those moments, it’s important not to stop at the phrase. If you're going to
 
 That’s when the answer becomes powerful — when it’s not the end of the discussion, but the start of a more thoughtful one.
 
-##  Final Thoughts
+## Final Thoughts
 
 “It depends” isn’t a cop-out — but it can be. Like most things in tech, it’s all about how we use it. When it becomes a way to invite nuance and context, it’s a great tool. When it becomes a way to avoid committing to an idea, it shuts the door on valuable dialogue.
 
