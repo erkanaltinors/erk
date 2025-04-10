@@ -9,10 +9,10 @@ Bundan birkaç yıl önce “Tailwind CSS gerçekten iyi mi, yoksa gereksiz mi?�
 
 Bu tartışmaların içinde ise, neredeyse her zaman duyduğumuz bir cevap var: Duruma göre değişir. Bu cevabı bir madalyonun iki yüzü gibi ele alıp, hem ne işe yaradığını hem de hangi durumlarda eksik kaldığını anlatmak istiyorum.
 
-## Madalyonun Ön Yüzü
+##  Madalyonun Ön Yüzü
 
 Tartışmalar uzadıkça, konuya daha fazla dalıyoruz. Bir süre sonra öyle bir noktaya geliyoruz ki, büyük resmi görmek zorlaşıyor. İşte bu evrensel cevap, o büyük resmi tekrar hatırlatmakta çok işe yarıyor. Niyeti, bağlamı ve aslında neyi çözmeye çalıştığımızı yeniden göz önüne seriyor. Bazen sadece bu cevabı vermek bile odaklanmamıza yardımcı olabiliyor.
 
-## Madalyonun Arka Yüzü
+##  Madalyonun Arka Yüzü
 
 Ama elbette her tartışmanın bir yere varması için, farklı bakış açılarının karşı karşıya gelmesi gerekiyor. “Duruma göre değişir” cevabı ise, tek başına bir fikir sunmadığı için bazen tartışmayı kısırlaştırabiliyor. Hatta bir noktadan sonra bu cevabı veren kişinin konuya mesafeli kaldığı düşünülmeye başlanabiliyor. O yüzden, eğer bu cevabı veriyorsanız, sadece orada bırakmamakta fayda var. Büyük resmi görmenin sağladığı farkındalıkla, hangi durumlarda neyin değiştiğini de açık açık paylaşırsanız, tartışmaya gerçekten değer katmış olursunuz.
