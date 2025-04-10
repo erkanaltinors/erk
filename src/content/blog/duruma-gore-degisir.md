@@ -3,7 +3,7 @@ title: "Duruma Göre Değişir"
 description: "Yazılım Geliştirme ile İlgili Tüm Soruların Evrensel Yanıtı"
 ---
 
-azılım dünyasına adım atmadan önce bile, yeni çıkan teknolojilerin yarattığı heyecanla birlikte patlak veren tartışmalara sık sık denk geliyordum. Bu tür çatışmalar, yıllar geçse de bitmiyor, sadece konusu değişiyor. İki seçenekli bir durum bile çoğu zaman tartışma yaratmaya yetiyor. Bazen de seçenekler çoğaldıkça ortam daha da hararetleniyor.
+Yazılım dünyasına adım atmadan önce bile, yeni çıkan teknolojilerin yarattığı heyecanla birlikte patlak veren tartışmalara sık sık denk geliyordum. Bu tür çatışmalar, yıllar geçse de bitmiyor, sadece konusu değişiyor. İki seçenekli bir durum bile çoğu zaman tartışma yaratmaya yetiyor. Bazen de seçenekler çoğaldıkça ortam daha da hararetleniyor.
 
 Bundan birkaç yıl önce “Tailwind CSS gerçekten iyi mi, yoksa gereksiz mi?” diye tartışıyorduk. Bugün “Yapay zeka ve agent’larla junior geliştirici yetişir mi, yetişmez mi?” sorusu gündemde. Muhtemelen yarın da yepyeni bir teknoloji çıkacak ve onun ne kadar işe yarar ya da ne kadar zararlı olduğunu konuşacağız. Çünkü her gün yeni bir şey çıkıyor ve bu da yeni tartışmaların doğmasına yol açıyor.
 
