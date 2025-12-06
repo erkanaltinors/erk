@@ -2,10 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
-import dayjs from "dayjs";
-import utc from "dayjs/plugin/utc";
 
-dayjs.extend(utc);
 interface Props {
 	entry: CollectionEntry<"blog">;
 }
@@ -18,10 +15,7 @@ export async function getStaticPaths() {
 }
 // 2. For your template, you can get the entry directly from the prop
 const { entry } = Astro.props;
-const { Content, remarkPluginFrontmatter } = await entry.render();
-const lastModifiedday = dayjs(remarkPluginFrontmatter.lastModified).format(
-	"MMMM YYYY",
-);
+const { Content } = await entry.render();
 ---
 
 <Layout title={entry.data.title} lang="en" description={entry.data.description}>
@@ -29,7 +23,6 @@ const lastModifiedday = dayjs(remarkPluginFrontmatter.lastModified).format(
 <meta property="og:type" content="article" slot="page-type" />
  <section class="pb-10">
   <div class="container max-w-[600px]">
-    <p class="text-gray-700">{lastModifiedday}</p>
    <h1 class="text-4xl md:text-5xl mt-4">{entry.data.title}</h1>
    <p class="text-xl md:text-2xl text-gray-600 mb-8">{entry.data.description}</p>
    <div class="blog-wrapper">
