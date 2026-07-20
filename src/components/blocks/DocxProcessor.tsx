@@ -6,12 +6,23 @@ import {
 	TextRun,
 	convertMillimetersToTwip,
 } from "docx";
-import * as FileSaver from "file-saver";
 import mammoth from "mammoth";
 import { type ChangeEvent, useState } from "react";
 
 const dayHeadingRegex = /^(\d+)\s*\.\s*Gün|^(\d+)\s*Gün/i;
 const bodyTextSize = 18; // 9pt
+
+// Yerel tarayıcı indirme mekanizması (file-saver bağımlılığını kaldırır)
+function saveAsBlob(blob: Blob, fileName: string) {
+	const url = URL.createObjectURL(blob);
+	const a = document.createElement("a");
+	a.href = url;
+	a.download = fileName.endsWith(".docx") ? fileName : `${fileName}.docx`;
+	document.body.appendChild(a);
+	a.click();
+	document.body.removeChild(a);
+	URL.revokeObjectURL(url);
+}
 
 function isValidOutputName(name: string): boolean {
 	return Boolean(name?.trim().length);
@@ -204,9 +215,6 @@ function DocxProcessor() {
 			const bodyChildren = Array.from(doc.body?.children ?? []);
 			let serviceListPending = false;
 			let lastDayHeadingIndex = -1;
-
-			// Orijinal dökümandaki eski üst başlıkları (Tur adı, havayolu vb.) atlamak için kilit mekanizması.
-			// İlk resmi gün başlığı görünene kadar dökümanın en tepesindeki düz yazıları listeye eklemiyoruz.
 			let standardContentStarted = false;
 
 			for (let index = 0; index < bodyChildren.length; index += 1) {
@@ -217,14 +225,13 @@ function DocxProcessor() {
 
 				const isDayHeading = dayHeadingRegex.test(rawText);
 				if (isDayHeading) {
-					standardContentStarted = true; // İlk gün başlığını gördük, içerik alımı başladı.
+					standardContentStarted = true;
 					const formattedDayTitle = formatDayHeading(rawText);
 					items.push({ type: "subheading", text: formattedDayTitle });
 					lastDayHeadingIndex = items.length - 1;
 					continue;
 				}
 
-				// Eğer dökümanın başındaki eski başlık alanındaysak bu elementleri es geç
 				if (!standardContentStarted) {
 					continue;
 				}
@@ -444,7 +451,7 @@ function DocxProcessor() {
 			});
 
 			const blob = await Packer.toBlob(docxDocument);
-			FileSaver.saveAs(blob, `${outputName}.docx`);
+			saveAsBlob(blob, outputName);
 			setIsProcessing(false);
 		} catch (err) {
 			console.error(err);
