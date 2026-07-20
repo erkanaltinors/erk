@@ -11,7 +11,6 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
 	site: "https://erkanaltinors.com",
 	trailingSlash: "never",
-
 	markdown: {
 		shikiConfig: {
 			wrap: true,
