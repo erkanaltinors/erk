@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import "@fontsource-variable/red-hat-text";
+
+@theme {
+  --default-font-family: "Red Hat Text Variable", sans-serif, -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    "Noto Sans",
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+@utility container {
+  margin-inline: auto;
+  /* Centers the container automatically */
+  padding-inline: 1rem;
+  /* Applies default horizontal padding */
+  width: 100%;
+
+  @variant sm {
+    max-width: 640px;
+  }
+
+  @variant md {
+    max-width: 768px;
+  }
+
+  @variant lg {
+    max-width: 1024px;
+  }
+
+  @variant xl {
+    max-width: 1280px;
+  }
+
+  @variant 2xl {
+    max-width: 1536px;
+  }
+}

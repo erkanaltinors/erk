@@ -1,0 +1,9 @@
+---
+import DocxProcessor from "@/components/blocks/DocxProcessor";
+import Layout from "@/layouts/Layout.astro";
+---
+<Layout lang="tr" title="Dosyala" description="Dosyala" robotsNoIndex={true}>
+<div class="p-5">
+<DocxProcessor client:load />
+</div>
+</Layout>

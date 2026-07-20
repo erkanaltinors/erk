@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 
 interface Props {
@@ -9,23 +9,27 @@ interface Props {
 
 export async function getStaticPaths() {
 	const blogEntries = await getCollection("blog");
-	return blogEntries.map((entry: { slug: string }) => {
-		return { params: { slug: entry.slug }, props: { entry } };
+
+	return blogEntries.map((entry) => {
+		return {
+			params: { slug: entry.id },
+			props: { entry },
+		};
 	});
 }
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 ---
 
 <Layout title={entry.data.title} lang="tr" description={entry.data.description}>
 <meta property="article:author" content="Erkan Altınörs" slot="author"/>
 <meta property="og:type" content="article" slot="page-type" />
  <section class="pb-10">
-  <div class="container max-w-[600px]">
+  <div class="container max-w-150">
    <h1 class="text-4xl md:text-5xl mt-4">{entry.data.title}</h1>
    <p class="text-xl md:text-2xl text-gray-600 mb-8">{entry.data.description}</p>
    <div class="blog-wrapper">
-       <Content />
+    <Content />
    </div>
   </div>
  </section>

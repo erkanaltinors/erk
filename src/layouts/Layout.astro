@@ -3,13 +3,18 @@ type Props = {
 	title: string;
 	lang: string;
 	description: string;
+	robotsNoIndex?: boolean;
 };
 
 const currentPath = Astro.url.href;
-const { title, lang, description } = Astro.props as Props;
+const {
+	title,
+	lang,
+	description,
+	robotsNoIndex = false,
+} = Astro.props as Props;
 import Header from "@/components/blocks/Header.astro";
-import "@/styles/globals.css";
-import "@fontsource-variable/red-hat-text";
+import "@/styles/global.css";
 ---
 
 <!doctype html>
@@ -47,6 +52,7 @@ import "@fontsource-variable/red-hat-text";
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
   <link rel="sitemap" href="/sitemap-index.xml" />
+  {robotsNoIndex && <meta name="robots" content="noindex, nofollow" />}
   <title>{title}</title>
  </head>
  <body>
