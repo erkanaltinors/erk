@@ -17,7 +17,6 @@ export default defineConfig({
 			theme: "dark-plus",
 		},
 	},
-
 	image: {
 		remotePatterns: [
 			{
@@ -41,6 +40,19 @@ export default defineConfig({
 
 	build: {
 		format: "file",
+		rolldownOptions: {
+			output: {
+				codeSplitting: true, // Açık code-splitting kullanımı
+			},
+		},
+		rollupOptions: {
+			output: {
+				manualChunks: {
+					// Ağır docx/mammoth kütüphanelerini ayrı bir dosyaya ayırır
+					docxProcessor: ["docx", "mammoth"],
+				},
+			},
+		},
 	},
 
 	vite: {
