@@ -1,10 +1,18 @@
 import {
-	AlignmentType,
-	Document,
-	Packer,
-	Paragraph,
-	TextRun,
-	convertMillimetersToTwip,
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue
+} from "@/components/ui/select";
+import {
+  AlignmentType,
+  Document,
+  Packer,
+  Paragraph,
+  TextRun,
+  convertMillimetersToTwip,
 } from "docx";
 import mammoth from "mammoth";
 import { type ChangeEvent, useState } from "react";
@@ -220,7 +228,7 @@ function DocxProcessor() {
   const [nightInput, setNightInput] = useState("");
   const [dayInput, setDayInput] = useState("");
   const [mainTitleInput, setMainTitleInput] = useState("");
-  const [airline, setAirline] = useState("Türk Hava Yolları");
+  const [airline, setAirline] = useState<string|null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
 
   function handleFileChange(event: ChangeEvent<HTMLInputElement>) {
@@ -439,7 +447,7 @@ function DocxProcessor() {
         );
       }
 
-      if (airline.trim()) {
+      if (typeof airline === "string" && airline.trim()) {
         titleParagraphs.push(
           new Paragraph({
             alignment: AlignmentType.CENTER,
@@ -584,20 +592,22 @@ function DocxProcessor() {
           />
         </label>
 
-        <label htmlFor="airlines" className="block mb-2">
+        <label className="block mb-2">
           Havayolu
+          <Select value={airline} onValueChange={setAirline}>
+          <SelectTrigger className="w-full bg-white rounded-sm">
+            <SelectValue placeholder="Havayolu Seçin"/>
+          </SelectTrigger>
+          <SelectContent>
+            <SelectGroup>
+              <SelectItem value="Türk Havayolları">THY</SelectItem>
+              <SelectItem value="Pegasus Havayolları" className="dark:hover:bg-red-500">Pegasus</SelectItem>
+              <SelectItem value="Ana Air Havayolları">Ana Air</SelectItem>
+              <SelectItem value="Emirates Havayolları">Emirates</SelectItem>
+            </SelectGroup>
+          </SelectContent>
+        </Select>
         </label>
-        <select
-          id="airlines"
-          className="bg-white w-full block rounded border border-slate-300 px-3 py-2 mb-2"
-          value={airline}
-          onChange={(event) => setAirline(event.target.value)}
-        >
-          <option value="Türk Hava Yolları">THY</option>
-          <option value="Pegasus Hava Yolları">Pegasus</option>
-          <option value="Ana Air Havayolları">Ana Air</option>
-        </select>
-
         <label htmlFor="nightInput" className="block mb-2">
           Gece
           <input
@@ -621,15 +631,13 @@ function DocxProcessor() {
         </label>
 
         <label className="block mb-4">
-          <span className="block text-sm font-medium text-slate-700">
             Yeni Dosya Adı
-          </span>
           <input
             type="text"
             value={outputName}
             onChange={(event) => setOutputName(event.target.value)}
             placeholder="ornek-dosya-adi"
-            className="mt-2 block w-full rounded-xl border border-slate-300 bg-white px-4 py-2 text-sm text-slate-700 shadow-sm focus:border-slate-500 focus:outline-none focus:ring-2 focus:ring-slate-200"
+            className="mt-2 block w-full rounded border border-slate-300 bg-white px-4 py-2 text-sm text-slate-700 shadow-sm focus:border-slate-500 focus:outline-none focus:ring-2 focus:ring-slate-200"
           />
         </label>
 
